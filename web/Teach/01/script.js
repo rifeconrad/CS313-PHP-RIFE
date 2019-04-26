@@ -10,8 +10,9 @@ function changeColor() {
 
 $(document).ready(function(){
 	$("#change").click(function() {
-		var color = $("#color").val();
-		$("#first").css({'background-color':color});
+		var $color = $("#color").val();
+
+		$("#first").css("backgroundColor", $color);
 		$("#debug").text($("#color").val());
 		$("#debug1").text("TEST");
 	});
