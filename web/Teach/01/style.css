@@ -1,16 +1,19 @@
-div : onhover {
+div:hover {
 	font-weight: bold;
 }
+
 #first {
 	color: white;
 	background-color: cyan;
 	font-size: 150%;
 }
+
 #second {
 	color: white;
 	background-color: blue;
 	font-size: 150%;
 }
+
 #third {
 	color: white;
 	background-color: purple;
