@@ -8,7 +8,8 @@ function changeColor() {
 	document.getElementById("first").style.backgroundColor = color;
 }
 
-
-$("#change").click(function() {
-	$("#first").css("background-color", $("#color").val());
+$(document).ready(function(){
+	$("#change").click(function() {
+		$("#first").css("background-color", $("#color").val());
+	});
 });
