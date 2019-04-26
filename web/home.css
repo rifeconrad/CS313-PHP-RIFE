@@ -12,7 +12,7 @@ a:hover {
 #here {
 	color: #84828F;
 	font-weight: bold;
-	cursor: none !important;
+	cursor: default !important;
 }
 
 #main_container {
@@ -28,6 +28,11 @@ a:hover {
 	background-color: #0081C3;
 
 	padding: 10px;
+}
+
+#nav_item {
+	display: flex;
+	flex-direction: row;
 }
 
 #description {
