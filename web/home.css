@@ -39,6 +39,12 @@ a:hover {
 	background-color: #E5E1EE;
 
 	padding: 25px;
+
+	overflow: hidden;
+}
+
+img {
+	height: 300px;
 }
 
 #name {
