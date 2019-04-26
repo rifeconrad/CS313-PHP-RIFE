@@ -42,7 +42,7 @@ a:hover {
 }
 
 img {
-
+	max-width: 300px;
 }
 
 #name {
