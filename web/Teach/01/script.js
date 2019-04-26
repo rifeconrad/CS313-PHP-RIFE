@@ -9,6 +9,8 @@ function changeColor() {
 }
 
 $(document).ready(function(){
+	$("#debug").text($("#color").val());
+	$("#debug1").text("TEST");
 	$("#change").click(function() {
 		$("#first").css("backgroundColor", $("#color").val());
 	});
