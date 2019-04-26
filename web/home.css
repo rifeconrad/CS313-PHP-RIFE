@@ -9,6 +9,10 @@ a:hover {
 	cursor: pointer;
 }
 
+#assignment {
+	color: black;
+}
+
 #here {
 	color: #84828F;
 	font-weight: bold;
