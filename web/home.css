@@ -1,14 +1,17 @@
+a {
+	text-decoration: none;
+}
+
 #nav {
 	text-align: left;
 	background-color: #0081C3;
 	color: white;
 	font-size: 200%;
 
-	text-decoration: none;
-
 	padding: 10px;
 }
 
 #nav:hover {
 	color: #E5E1EE;
+	cursor: pointer;
 }
