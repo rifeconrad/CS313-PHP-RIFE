@@ -55,13 +55,17 @@ img {
 	color: white;
 
 	padding: 5px;
-	max-width: 75px;
+	max-width: 300px;
 }
 
 #img_btn:hover {
 	cursor: pointer;
 
 	animation: fade 1s ease 0s 1 normal forwards;
+}
+
+#img_view {
+	display: none;
 }
 
 #name {
