@@ -1,3 +1,6 @@
+div : onhover {
+	font-weight: bold;
+}
 #first {
 	color: white;
 	background-color: cyan;
