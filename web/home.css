@@ -21,8 +21,6 @@ a:hover {
 }
 
 #nav {
-	display: inline-block;
-
 	text-align: left;
 	background-color: #0081C3;
 
@@ -30,8 +28,7 @@ a:hover {
 }
 
 #nav_item {
-	display: flex;
-	flex-direction: column;
+	display: inline-block;
 }
 
 #description {
