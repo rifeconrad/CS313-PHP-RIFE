@@ -12,7 +12,6 @@ $(document).ready(function(){
 	$("#change").click(function() {
 		var $color = $("#color").val();
 		$("#second").css("backgroundColor", $color);
-		$("#debug").text($("#color").val());
-		$("#debug1").text("TEST");
+		
 	});
 });
