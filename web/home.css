@@ -21,8 +21,7 @@ a:hover {
 }
 
 #nav {
-	display: flex;
-	flex-direction: column;
+	display: inline-block;
 
 	text-align: left;
 	background-color: #0081C3;
