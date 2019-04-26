@@ -4,9 +4,15 @@ a {
 	font-size: 200%;
 }
 a:hover {
-	color: #E5E1EE;
+	color: #84828F;
 	font-weight: bold;
 	cursor: pointer;
+}
+
+#here {
+	color: #84828F;
+	font-weight: bold;
+	cursor: none !important;
 }
 
 #main_container {
