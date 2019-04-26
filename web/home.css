@@ -15,9 +15,7 @@ a:hover {
 }
 
 #assignment:hover {
-	text-align: left;
 	color: #E5E1EE;
-	background-color: #E5E1EE;
 }
 
 #here {
@@ -45,7 +43,7 @@ a:hover {
 #description {
 	display: flex;
 	flex-direction: column;
-text-align: left;
+	text-align: left;
 	background-color: #E5E1EE;
 	
 
