@@ -9,6 +9,7 @@
 		<div id="nav">
 			<a id="here" href="home.html">HOME</a>
 			<a href="assignments.html">ASSIGNMENTS</a>
+			<?php echo "Access Time: " . date("D M d, Y G:i a"); ?>
 		</div>
 		<div id="description">
 			<span id="name">Conrad Rife</span><br>
@@ -19,8 +20,6 @@
 			<div id="img_view"><img src="images/family_picture.jpg" alt="family_picture"></div>
 		</div>
 	</div>
-
-	<?php echo "Today is " . date("D M d, Y G:i a"); ?>
 
 	<script src="home.js"></script>
 </body>
