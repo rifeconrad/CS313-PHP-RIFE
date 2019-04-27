@@ -20,7 +20,7 @@
 			<?php echo "<p>" . "System Time: " . date("D M d, Y G:i a") . "</p>"; ?>
 
 			<?php
-				$servername = "MySQL80";
+				$servername = "localhost";
 				$username = "username";
 				$password = "password";
 
