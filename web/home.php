@@ -21,8 +21,8 @@
 
 			<?php
 				$servername = "127.0.0.1";
-				$username = "username";
-				$password = "password";
+				$username = "user";
+				$password = "pass";
 				$database = "MySQL80";
 
 				// Create connection
