@@ -26,7 +26,7 @@
 				$database = "MySQL80";
 
 				// Create connection
-				$conn = new mysqli("127.0.0.1", "username", "password", "MySQL80");
+				$conn = new mysqli("127.0.0.1::3307", "username", "password", "MySQL80");
 				// Check connection
 				if ($conn->connect_error) {
 				    die("Connection failed: " . $conn->connect_error);
