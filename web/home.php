@@ -17,7 +17,30 @@
 			</p>
 			<div id="img_btn">VIEW FAMILY PICTURE</div>
 			<div id="img_view"><img src="images/family_picture.jpg" alt="family_picture"></div>
-			<?php echo "<p>" . "Access Time: " . date("D M d, Y G:i a") . "</p>"; ?>
+			<?php echo "<p>" . "System Time: " . date("D M d, Y G:i a") . "</p>"; ?>
+
+			<?php
+				$servername = "MySQL80";
+				$username = "username";
+				$password = "password";
+
+				// Create connection
+				$conn = new mysqli($servername, $username, $password);
+				// Check connection
+				if ($conn->connect_error) {
+				    die("Connection failed: " . $conn->connect_error);
+				} 
+
+				// Create database
+				$sql = "CREATE DATABASE myDB";
+				if ($conn->query($sql) === TRUE) {
+				    echo "Database created successfully";
+				} else {
+				    echo "Error creating database: " . $conn->error;
+				}
+
+				$conn->close();
+			?>
 		</div>
 	</div>
 
