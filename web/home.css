@@ -70,7 +70,7 @@ img {
 #img_btn:hover {
 	cursor: pointer;
 
-	animation: fade 1s ease 0s 1 normal forwards;
+	animation: fade 0.3s ease 0s 1 normal forwards;
 }
 
 #img_view {
