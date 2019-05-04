@@ -3,8 +3,6 @@
 <head>
 	<title>Conrad's CS313 Home Page</title>
 	<link rel="stylesheet" type="text/css" href="home.css">
-	
-	<script src="home.js"></script>
 </head>
 <body>
 	<div id="main_container">
@@ -46,6 +44,6 @@
 			?>
 		</div>
 	</div>
-
+	<script src="home.js"></script>
 </body>
 </html>

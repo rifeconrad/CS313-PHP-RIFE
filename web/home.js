@@ -1,6 +1,10 @@
-document.getElementById("img_btn").addEventListener("click", viewImg);
+document.getElementById("img_btn").addEventListener("click", function (event) {
 
-function viewImg() {
 	console.log("CALLED");
 	document.getElementById("img_view").style.display = "initial";
+
+}, false);
+
+function viewImg() {
+	
 }
