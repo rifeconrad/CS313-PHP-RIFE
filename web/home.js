@@ -1,6 +1,7 @@
 window.addEventListener('load', init);
 
 function init() {
+	console.log("initializing");
 	document.getElementById("img_btn").addEventListener("click", viewImg, false);
 }
 
