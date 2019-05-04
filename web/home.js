@@ -1,4 +1,8 @@
-document.getElementById("img_btn").addEventListener("click", viewImg, false);
+window.addEventListener('load', init);
+
+function init() {
+	document.getElementById("img_btn").addEventListener("click", viewImg, false);
+}
 
 function viewImg() {
 	console.log("CALLED");
