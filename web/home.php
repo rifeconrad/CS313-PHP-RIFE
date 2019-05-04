@@ -15,7 +15,7 @@
 			<p>
 				I was born in California, but was raised in Ohio. I love spending<br> time with my family, playing board games, programming, sleeping,<br>going to work, playing video games, and listening to music. My most<br> recent hobby is listening to and memorizing German songs with my<br> wife. 
 			</p>
-			<div id="img_btn" onClick="viewImg()">VIEW FAMILY PICTURE</div>
+			<div id="img_btn">VIEW FAMILY PICTURE</div>
 			<div id="img_view"><img src="images/family_picture.jpg" alt="family_picture"></div>
 			<?php echo "<p>" . "System Time: " . date("D M d, Y G:i a") . "</p>"; ?>
 
