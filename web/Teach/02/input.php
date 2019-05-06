@@ -4,5 +4,5 @@
 	$major = $_POST["major"];
 	$comments = $_POST["comments"];
 
-	echo $name . " " . $email . " " . $major . " " . $comments;
+	echo $name . " <a href='$email'>" . $email . "</a> " . $major . " " . $comments;
 ?>
