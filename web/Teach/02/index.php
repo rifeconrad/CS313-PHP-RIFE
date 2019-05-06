@@ -11,7 +11,7 @@
 		<input type="radio" name="major" value="WDD"> Web Design and Development<br>
 		<input type="radio" name="major" value="CIT"> Computer Information Technology<br>
 		<input type="radio" name="major" value="CE"> Computer Engineering<br>
-		Comment: <textarea></textarea><br>
+		Comment: <textarea name="comments"></textarea><br>
 		<input type="submit">
 
 	</form>
