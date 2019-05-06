@@ -13,8 +13,8 @@
 		<input type="radio" name="major" value="CIT"> Computer Information Technology<br>
 		<input type="radio" name="major" value="CE"> Computer Engineering<br>
 
-		<input type="checkbox" name="continent[]" value="NA">North America<br>
-		<input type="checkbox" name="continent[]" value="SA">South America<br>
+		<input type="checkbox" name="continent[]" value="North America">North America<br>
+		<input type="checkbox" name="continent[]" value="South America">South America<br>
 		<input type="checkbox" name="continent[]" value="EU">Europe<br>
 		<input type="checkbox" name="continent[]" value="ASIA">Asia<br>
 		<input type="checkbox" name="continent[]" value="AUS">Australia<br>

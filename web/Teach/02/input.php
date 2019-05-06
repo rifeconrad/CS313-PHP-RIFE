@@ -10,10 +10,4 @@
 	foreach($continent as $selected){
 		echo $selected."</br>";
 	}
-
-
-	if (isset($_POST['continent'])) 
-	{
-	    echo $_POST['continent'][0]; 
-	}
 ?>
