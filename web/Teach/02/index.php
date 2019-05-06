@@ -1,4 +1,3 @@
-<?php?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,7 +35,7 @@
 			$majors = array("Computer Science", "Web Design", "CIT", "CE");
 
 			foreach($majors as $major) {
-				echo "<input type='radio' name='major' value='$major'>$major<br>"
+				echo "<input type='radio' name='major' value='$major'>$major<br>";
 			}
 		?>
 
