@@ -10,8 +10,9 @@
 		<input type="radio" name="major" value="CS"> Computer Science<br>
 		<input type="radio" name="major" value="WDD"> Web Design and Development<br>
 		<input type="radio" name="major" value="CIT"> Computer Information Technology<br>
-		<input type="radio" name="major" value="CE"> Computer Engineering
+		<input type="radio" name="major" value="CE"> Computer Engineering<br>
 		<input type="submit">
+		Comment: <textarea></textarea>
 	</form>
 </body>
 </html>
