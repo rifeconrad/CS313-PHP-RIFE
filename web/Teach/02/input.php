@@ -10,6 +10,6 @@
 
 	if (isset($_POST['continent'])) 
 	{
-	    echo $_POST['continent']; 
+	    echo $_POST['continent'][0]; 
 	}
 ?>
