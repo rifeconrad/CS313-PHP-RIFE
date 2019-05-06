@@ -19,7 +19,7 @@
 		<input type="checkbox" name="continent[]" value="ASIA">Asia<br>
 		<input type="checkbox" name="continent[]" value="AUS">Australia<br>
 		<input type="checkbox" name="continent[]" value="AFR">Africa<br>
-		<input type="checkbox" name="continent[]" value="ANT"> Antarctica<br>
+		<input type="checkbox" name="continent[]" value="ANT">Antarctica<br>
 
 		Comment: <textarea name="comments"></textarea><br>
 		<input type="submit">

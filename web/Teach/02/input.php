@@ -7,6 +7,10 @@
 
 	echo $name . " <a href='mailto:$email'>" . $email . "</a> " . $major . " " . $comments;
 
+	foreach($continent as $selected){
+		echo $selected."</br>";
+	}
+
 
 	if (isset($_POST['continent'])) 
 	{
