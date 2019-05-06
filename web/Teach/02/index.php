@@ -1,4 +1,6 @@
 <?php?>
+<!DOCTYPE html>
+<html>
 <head>
 	<title>Teach 02</title>
 </head>
@@ -51,3 +53,4 @@
 
 	</form>
 </body>
+</html>
