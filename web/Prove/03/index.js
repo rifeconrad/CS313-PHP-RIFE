@@ -16,6 +16,8 @@ function addToCart() {
 	var qID = "q" + item_name;
 	var item_quantity = document.getElementById(qID).value;
 
+	console.log(item_name + " " + item_quantity);
+
 	// create object and stringify data
 	var item = new Item(item_name, item_quantity, 10);
 	var item_str = JSON.stringify(item);
