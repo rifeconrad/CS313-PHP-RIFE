@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Prove 03 Store</title>
+
+	<script src="index.js"></script>
 </head>
 <body>
 	<form id="browse" action="cart.php" method="post">

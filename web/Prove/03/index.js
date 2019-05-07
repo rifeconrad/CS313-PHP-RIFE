@@ -1,6 +1,9 @@
-<?php
-	$selected = $_POST["Food"];
-	$quantity = $_POST["Food_quantity"];
+window.addEventListener('load', init);
 
-	echo "$selected = $quantity";
-?>
+function init() {
+	document.getElementById("cart_btn").addEventListener("click", showCart, false);
+}
+
+function showCart() {
+	document.getElementById("browse").submit();
+}
