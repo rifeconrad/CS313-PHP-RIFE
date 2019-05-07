@@ -14,8 +14,9 @@
 			}	
 
 			var item = JSON.parse(item_str);
-			document.innerHTML = item.name + " " + item.quantity + " " + item.price + "<br>";
+			document.getElementById("here").innerHTML = item.name + " " + item.quantity + " " + item.price + "<br>";
 		}
 	</script>
+	<div id="here"></div>
 </body>
 </html>
