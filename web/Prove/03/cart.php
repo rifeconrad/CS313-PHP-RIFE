@@ -7,9 +7,12 @@
 	<script>
 		var items = ["Food", "Cat", "Dog", "Fish"];
 		for (i in items) {
-			console.log(items[i]);
 			var item_str = sessionStorage[items[i]];
-			console.log("ITEM STRING " + item_str);
+
+			if (typeof item_str == 'undefined') {
+  			  continue;
+			}	
+
 			var item = JSON.parse(item_str);
 			document.innerHTML = item.name + " " + item.quantity + " " + item.price + "<br>";
 		}
