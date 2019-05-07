@@ -5,8 +5,9 @@
 </head>
 <body>
 	<form id="browse" action="cart.php" method="post">
-		<?php include 'header.php';?>
+
 		<?php
+			include 'header.php';
 			$items = array("Food", "Cat", "Dog", "Fish");
 
 			foreach($items as $item) {
