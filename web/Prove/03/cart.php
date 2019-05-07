@@ -5,9 +5,10 @@
 </head>
 <body>
 	<script>
-		for (item_str in sessionStorage) {
-			console.log(sessionStorage[item_str]);
-			var item = JSON.parse(sessionStorage[item_str]);
+		for (json in sessionStorage) {
+			var item_str = sessionStorage[json];
+			console.log("ITEM STRING " + item_str);
+			var item = JSON.parse(item_str);
 			document.innerHTML = item.name + " " + item.quantity + " " + item.price + "<br>";
 		}
 	</script>
