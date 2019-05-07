@@ -1,6 +1,6 @@
 <?php
 	foreach($_POST["item"] as $item){
-		$quantity = $_POST['q$item'];
+		$quantity = $_POST["q$item"];
 		echo "$item => $quantity</br>";
 	}
 
