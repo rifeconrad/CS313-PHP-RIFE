@@ -7,6 +7,7 @@
 	<script>
 		var items = ["Food", "Cat", "Dog", "Fish"];
 		for (item in items) {
+			console.log(item);
 			var item_str = sessionStorage[item];
 			console.log("ITEM STRING " + item_str);
 			var item = JSON.parse(item_str);
