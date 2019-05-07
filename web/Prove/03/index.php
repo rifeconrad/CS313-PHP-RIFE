@@ -13,7 +13,7 @@
 		$items = array("Food", "Cat", "Dog", "Fish");
 
 		foreach($items as $item) {
-			echo "<input type='checkbox' name='item[]' value='$item'>$item<input type='text' name='q$item' maxlength='2' size='2'/><button id='item_btn' value='$item'>Add To Cart</button>";
+			echo "<input type='checkbox' name='item[]' value='$item'>$item<input type='text' name='q$item' maxlength='2' size='2'/><button id='item_btn' value='$item'>Add To Cart</button><br>";
 		}
 	?>
 
