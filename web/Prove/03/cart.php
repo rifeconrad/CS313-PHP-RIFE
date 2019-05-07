@@ -1,5 +1,5 @@
 <?php
-	foreach($_POST['item'] as $selected){
+	foreach($_POST["item"] as $selected){
 		echo $selected."</br>";
 	}
 
