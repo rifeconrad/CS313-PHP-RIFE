@@ -4,6 +4,7 @@
 	<title>Prove 03 Store</title>
 </head>
 <body>
+	<div id="here"></div>
 	<script>
 		var items = ["Food", "Cat", "Dog", "Fish"];
 		for (i in items) {
@@ -17,6 +18,5 @@
 			document.getElementById("here").innerHTML = item.name + " " + item.quantity + " " + item.price + "<br>";
 		}
 	</script>
-	<div id="here"></div>
 </body>
 </html>
