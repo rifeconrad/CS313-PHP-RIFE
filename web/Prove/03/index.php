@@ -6,7 +6,7 @@
 <body>
 	<?php include 'header.php';?>
 
-	<form action="cart.php" method="post">
+	<form name="browse" action="cart.php" method="post">
 		<?php
 			$items = array("Food", "Cat", "Dog", "Fish");
 
