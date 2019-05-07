@@ -14,7 +14,7 @@
 		}
 	?>
 
-	<form name="browse" method="post">
+	<form action="" name="browse" method="post">
 		Apple<input type='text' maxlength='2' size='2'/><button id='apple_btn' value='Apple'>Add To Cart</button><br>
 
 		Banana<input type='text' maxlength='2' size='2'/><button id='banana_btn' value='Banana'>Add To Cart</button><br>
