@@ -1,6 +1,7 @@
 <?php
-	$selected = $_POST["Food"];
-	$quantity = $_POST["qFood"];
+	foreach($_POST['item'] as $selected){
+		echo $selected."</br>";
+	}
 
-	echo "$selected = $quantity";
+	//echo "$selected = $quantity";
 ?>
