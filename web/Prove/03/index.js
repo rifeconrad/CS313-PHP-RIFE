@@ -17,7 +17,7 @@ function addToCart() {
 
 	var qID = "q" + item_name;
 	console.log(qID);
-	var item_quantity = document.getElementByName(qID).value;
+	var item_quantity = document.getElementById(qID).value;
 
 	console.log(item_quantity);
 

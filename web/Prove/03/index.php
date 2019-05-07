@@ -13,7 +13,7 @@
 		$items = array("Food", "Cat", "Dog", "Fish");
 
 		foreach($items as $item) {
-			echo "$item<input type='text' name='q$item' maxlength='2' size='2'/><button id='item_btn' value='$item'>Add To Cart</button><br>";
+			echo "$item<input type='text' id='q$item' maxlength='2' size='2'/><button id='item_btn' value='$item'>Add To Cart</button><br>";
 		}
 	?>
 <script src="index.js"></script>
