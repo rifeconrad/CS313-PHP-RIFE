@@ -13,13 +13,9 @@ function Item(name, quantity, price)
 function addToCart() {
 	// grab data
 	var item_name = document.getElementById("item_btn").value;
-	console.log(item_name);
-
 	var qID = "q" + item_name;
-	console.log(qID);
 	var item_quantity = document.getElementById(qID).value;
 
-	console.log(item_quantity);
 
 	// create object and stringify data
 	var item = new Item(item_name, item_quantity, 10);
@@ -27,4 +23,8 @@ function addToCart() {
 
  	// store data to session
 	sessionStorage.setItem(item_name, item_str);
+}
+
+function showCart() {
+	document.getElementById("browse").submit();
 }
