@@ -6,16 +6,16 @@
 <body>
 	<?php include 'header.php';?>
 
-	<form action="input.php" method="post">
+	<form action="cart.php" method="post">
 		<?php
 			$items = array("Food", "Cat", "Dog", "Fish");
 
 			foreach($items as $item) {
-				echo "<input type='checkbox' name='item' value='$item'>$item<br>";
+				echo "<input type='checkbox' name='item' value='$item'>$item<input type='text' /><br>";
 			}
 		?>
-		<input type="submit">
-
+		<button>Go To Cart</button>
 	</form>
+
 </body>
 </html>
