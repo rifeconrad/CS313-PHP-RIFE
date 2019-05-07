@@ -7,7 +7,7 @@
 </head>
 <body>
 	<?php
-		$item = "";
+		$item = "5";
 		echo $item;
 	?>
 
