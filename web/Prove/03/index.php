@@ -64,12 +64,74 @@
  		}
 	?>
 
-	Apple<input type='text' maxlength='2' size='2'/><button id='apple_btn' value='Apple'>Add To Cart</button><br>
+	<h2>List of All Products</h2>
+ 		<table>
+   			<tr>
+   				<th>Product</th>
+   				<th width="10px">&nbsp;</th>
+   				<th>Amount</th>
+   				<th width="10px">&nbsp;</th>
+   				<th>Action</th>
+   			</tr>
+ 	<?php
+ 		for ($i=0; $i< count($products); $i++) {
+   	?>
+   			<tr>
+   				<td><?php echo($products[$i]); ?></td>
+   				<td width="10px">&nbsp;</td>
+   				<td><?php echo($amounts[$i]); ?></td>
+   				<td width="10px">&nbsp;</td>
+   				<td><a href="?add=<?php echo($i); ?>">Add to cart</a></td>
+   			</tr>
+   <?php
+ 		}
+ 	?>
+ 			<tr>
+ 				<td colspan="5"></td>
+ 			</tr>
+ 			<tr>
+ 				<td colspan="5"><a href="?reset=true">Reset Cart</a></td>
+ 			</tr>
+ 		</table>
+ 	<?php
+ 		if ( isset($_SESSION["cart"]) ) {
+ 	?>
 
-	Banana<input type='text' maxlength='2' size='2'/><a href="?add=<?php echo($i);?>">Add To Cart</a><br>
+ 	<br/><br/><br/>
 
-	Orange<input type='text' maxlength='2' size='2'/><button id='orange_btn' value='Orange'>Add To Cart</button><br>
-
-	Grapes<input type='text' maxlength='2' size='2'/><button id='grapes_btn' value='Grapes'>Add To Cart</button><br>
-</body>
-</html>
+ 	<h2>Cart</h2>
+ 		<table>
+ 			<tr>
+ 				<th>Product</th>
+ 				<th width="10px">&nbsp;</th>
+ 				<th>Qty</th>
+ 				<th width="10px">&nbsp;</th>
+ 				<th>Amount</th>
+ 				<th width="10px">&nbsp;</th>
+ 				<th>Action</th>
+ 			</tr>
+ 	<?php
+ 		$total = 0;
+ 		foreach ( $_SESSION["cart"] as $i ) {
+ 		?>
+ 			<tr>
+				<td><?php echo( $products[$_SESSION["cart"][$i]] ); ?></td>
+ 				<td width="10px">&nbsp;</td>
+ 				<td><?php echo( $_SESSION["qty"][$i] ); ?></td>
+ 				td width="10px">&nbsp;</td>
+ 				<td><?php echo( $_SESSION["amounts"][$i] ); ?></td>
+ 				<td width="10px">&nbsp;</td>
+ 				<td><a href="?delete=<?php echo($i); ?>">Delete from cart</a></td>
+ 			</tr>
+ 	<?php
+ 			$total = $total + $_SESSION["amounts"][$i];
+ 		}
+ 		$_SESSION["total"] = $total;
+ 	?>
+ 			<tr>
+ 				<td colspan="7">Total : <?php echo($total); ?></td>
+ 			</tr>
+ 		</table>
+ 	<?php
+ 	}
+ 	?>
