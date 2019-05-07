@@ -4,7 +4,9 @@
 	<title>Prove 03 Store</title>
 </head>
 <body>
-	<?php include 'header.php';?>
+	<?php 
+		include 'header.php';
+	?>
 	<form id="browse" action="cart.php" method="post">
 		<?php
 			$items = array("Food", "Cat", "Dog", "Fish");
