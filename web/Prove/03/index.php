@@ -12,7 +12,7 @@
 
 	Apple<input type='text' maxlength='2' size='2'/><button id='apple_btn' value='Apple'>Add To Cart</button><br>
 
-	Banana<input type='text' maxlength='2' size='2'/><button id='banana_btn' value='Banana' href="?add=<?php echo('5');?>">Add To Cart</button><br>
+	Banana<input type='text' maxlength='2' size='2'/><button id='banana_btn' value='Banana' href="?add=<?php echo($item);?>">Add To Cart</button><br>
 
 	Orange<input type='text' maxlength='2' size='2'/><button id='orange_btn' value='Orange'>Add To Cart</button><br>
 
