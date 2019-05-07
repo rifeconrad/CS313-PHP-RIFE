@@ -1,6 +1,6 @@
 <?php
 	$selected = $_POST["Food"];
-	$quantity = $_POST["Food_quantity"];
+	$quantity = $_POST["qFood"];
 
 	echo "$selected = $quantity";
 ?>
