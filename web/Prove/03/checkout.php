@@ -4,8 +4,7 @@
 		$quantity = $_POST["q$item"];
 		echo "$item => $quantity</br>";
 		$total += $quantity;
-		echo "TOTALLY: $total";
 	}
 
-	echo "Total: $quantity";
+	echo "Total: $total";
 ?>
