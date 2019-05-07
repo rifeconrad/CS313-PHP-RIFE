@@ -9,7 +9,8 @@
 	<?php
 		$times = 0;
 		if ($_POST) {
-			echo $times++;
+			$times++;
+			echo "$times";
 		}
 	?>
 
@@ -22,6 +23,5 @@
 
 		Grape<input type='text' maxlength='2' size='2'/><button id='grape_btn' value='Grape'>Add To Cart</button><br>
 	</form>
-<script src="index.js"></script>
 </body>
 </html>
