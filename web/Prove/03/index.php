@@ -6,18 +6,16 @@
 	
 </head>
 <body>
-	<form name="browse" action="cart.php">
-		<?php 
-			session_start(); 
-			include 'header.php';
+	<?php 
+		session_start(); 
+		include 'header.php';
 
-			$items = array("Food", "Cat", "Dog", "Fish");
+		$items = array("Food", "Cat", "Dog", "Fish");
 
-			foreach($items as $item) {
-				echo "$item<input type='text' id='q$item' maxlength='2' size='2'/><button id='item_btn' value='$item'>Add To Cart</button><br>";
-			}
-		?>
-	</form>
+		foreach($items as $item) {
+			echo "$item<input type='text' id='q$item' maxlength='2' size='2'/><button id='item_btn' value='$item'>Add To Cart</button><br>";
+		}
+	?>
 <script src="index.js"></script>
 </body>
 </html>
