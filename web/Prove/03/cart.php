@@ -1,4 +1,5 @@
 <?php 
+	include("Product.php");
 	include("header.php"); 
 	include("fake_database.php");
 
