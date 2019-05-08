@@ -3,6 +3,8 @@
 	include("header.php"); 
 	include("fake_database.php");
 
+	session_start();
+
 	if (isset($_GET["remove"])) {
 		$product_name = $_GET["remove"];
 		if (isset($_SESSION["cart"])) {
