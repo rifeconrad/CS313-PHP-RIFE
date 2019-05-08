@@ -5,7 +5,11 @@
 	if (isset($_SESSION["cart"])) {
 		echo count($_SESSION["cart"]);
     	foreach ($cart as $item) {
-    		echo "<p>" . $item->name . " " . $item->price . "</p>";
+    		if (isset($item->name) {
+    			echo "<p>" . $item->name . " " . $item->price . "</p>";
+    		} else {
+    			echo "ERROR";
+    		}
     	}
   	} 
 ?>
