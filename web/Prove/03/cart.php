@@ -8,9 +8,9 @@
 		if (isset($_SESSION["cart"])) {
 			$remove_item = "";
     		foreach ($_SESSION["cart"] as $item) {
-    			if ($item->name === $product_name) {
-    				$remove_item = $item;
-    			}
+    			if (($item = array_search('word', $_SESSION["cart"])) !== false) {
+    				unset($_SESSION["cart"][$item]);
+				}
     		}
 
     		if ($remove_item != "") {
