@@ -22,8 +22,6 @@
       array_push($_SESSION["cart"], $product);
     }
   }
-
-  $found = count($_SESSION["cart"]);
 ?>
 <!DOCTYPE html>
 <html>
@@ -38,7 +36,7 @@
 
     for($i = 0; $i < count($products); $i++) {
   ?>
-  <p><?php echo $found; ?></p>
+  
   <div id="product">
     <div id="product_img"></div>
     <div id="product_name"><?php echo $products[$i]; ?></div>

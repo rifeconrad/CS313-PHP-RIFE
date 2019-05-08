@@ -6,7 +6,7 @@
 		$active = $_GET["active"];
 	}
 ?>
-<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="header.css">
 <div id='nav'>
 	<a href='index.php?active=HOME' id="<?php echo ($active === "HOME" ? "active_link" : "non_active_link") ?>">HOME</a>
 	<a href='cart.php?active=CART' id="<?php echo ($active === "CART" ? "active_link" : "non_active_link") ?>">CART</a>

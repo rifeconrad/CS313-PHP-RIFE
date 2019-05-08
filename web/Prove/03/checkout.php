@@ -1,12 +1,14 @@
-<?php
-	include("header.php");
+<?php 
+	include("Product.php");
+	include("header.php"); 
+	include("fake_database.php");
 
 	$total = 0;
-	foreach($_POST["item"] as $item){
-		$quantity = $_POST["q$item"];
-		echo "$item => $quantity</br>";
-		$total += $quantity;
-	}
+	if (isset($_SESSION["cart"])) {
+    	foreach ($_SESSION["cart"] as $item) {
+    		total += $item->price;
+    	}
+  	} 
 
-	echo "Total: $total";
+  	echo "<p>Total: " . $total . "</p>"
 ?>
