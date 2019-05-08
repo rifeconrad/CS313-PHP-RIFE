@@ -5,12 +5,17 @@
   $products = array("Apple", "Banana", "Orange", "Grapes");
   $prices = array("0.39", "0.19", "0.50", "4.00");
 
-  $found = 0;
+  if (!isset($_SESSION["cart"])) {
+    $_SESSION["cart"] = array();
+  }
+
   foreach ($products as $product) {
     if (isset($_GET[$product])) {
-      $found++;
+      array_push($_SESSION["cart"], $product);
     }
   }
+
+  $found = count($_SESSION["cart"]);
 ?>
 <!DOCTYPE html>
 <html>
