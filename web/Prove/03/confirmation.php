@@ -13,7 +13,7 @@
 		unset($_SESSION["cart"]);
 	}
 
-	echo "<div>Items Purchased</div>"
+	echo "<div>Items Purchased</div>";
 
 	foreach ($purchased as $item) {
 ?>
