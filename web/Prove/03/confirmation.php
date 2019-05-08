@@ -33,7 +33,7 @@
 		<div id="name"> 
 			<?php 
 				if (isset($_POST["first_name"]) && isset($_POST["last_name"])) {
-					echo $_POST["first_name"] . " " . $_POST["last_name"]; 
+					echo strip_tags ($_POST["first_name"]) . " " . strip_tags ($_POST["last_name"]); 
 				}
 			?> 
 		</div>
