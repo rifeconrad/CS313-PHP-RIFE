@@ -3,11 +3,12 @@
 	include("header.php"); 
 	include("fake_database.php");
 
-	$total = 0;
+	$total = 0.0;
 	if (isset($_SESSION["cart"])) {
     	foreach ($_SESSION["cart"] as $item) {
-    		echo gettype(floatval($item->price));
-    		//total += floatval($item->price);
+    		//echo gettype(floatval($item->price));
+    		$price = floatval($item->price);
+    		total += $price;
     	}
   	} 
 
