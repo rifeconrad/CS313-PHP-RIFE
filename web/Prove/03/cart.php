@@ -14,6 +14,7 @@
     		}
 
     		if ($remove_item != "") {
+    			echo "FOUND";
     			unset($_SESSION["cart"][$remove_item]);
     		}
     	}
