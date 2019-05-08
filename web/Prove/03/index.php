@@ -41,7 +41,7 @@
     <div id="product_img"></div>
     <div id="product_name"><?php echo $products[$i]; ?></div>
     <div id="product_price"><?php echo $prices[$i]; ?></div>
-    <a href="index.php?product=<?php echo $products[$i]; ?>&price=<?php echo $prices[$i]; ?>$active=HOME">Add To Cart</a>
+    <a href="index.php?product=<?php echo $products[$i]; ?>&price=<?php echo $prices[$i]; ?>&active=HOME">Add To Cart</a>
   </div><hr>
 
   <?php
