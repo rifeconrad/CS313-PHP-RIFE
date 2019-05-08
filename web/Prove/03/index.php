@@ -32,6 +32,8 @@
 <html>
 <head>
   <title>Prove 03 Shopping</title>
+
+  <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
   <?php
