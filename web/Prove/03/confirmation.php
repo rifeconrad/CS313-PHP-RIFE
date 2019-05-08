@@ -40,14 +40,14 @@
 		<div id="street">
 			<?php 
 				if (isset($_POST["street"])) {
-					echo $_POST["street"]; 
+					echo strip_tags ($_POST["street"]); 
 				}
 			?> 
 		</div>
 		<div id="city_state">
 			<?php 
 				if (isset($_POST["city"]) && isset($_POST["state"])) {
-					echo $_POST["city"] . ", " . $_POST["city"]; 
+					echo strip_tags ($_POST["city"]) . ", " . strip_tags ($_POST["city"]); 
 				}
 			?> 
 		</div>
