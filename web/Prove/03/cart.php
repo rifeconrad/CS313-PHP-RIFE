@@ -7,6 +7,7 @@
     	foreach ($cart as $item) {
     		if (isset($item->name)) {
     			echo "<p>" . $item->name . " " . $item->price . "</p>";
+    			echo "GOOD";
     		} else {
     			echo "ERROR";
     		}
