@@ -5,7 +5,7 @@
 
 	session_start();
 
-	echo "Transaction Complete!<br>";
+	echo "<div>Transaction Complete!</div><br>";
 
 	$purchased = array();
 	if (isset($_SESSION["cart"])) {
