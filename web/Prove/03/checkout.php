@@ -14,3 +14,12 @@
 
   	echo "<p>Total: " . $total . "</p>";
 ?>
+
+<form name="checkout" action="confirmation.php">
+	First Name <input type="text" name="first_name"></input>
+	Last Name <input type="text" name="last_name"></input>
+	Street <input type="text" name="street"></input>
+	City <input type="text" name="city"></input>
+	State <input type="text" name="state"></input>
+	<input type="submit">
+</form>
