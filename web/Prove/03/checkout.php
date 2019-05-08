@@ -8,7 +8,7 @@
     	foreach ($_SESSION["cart"] as $item) {
     		//echo gettype(floatval($item->price));
     		$price = floatval($item->price);
-    		total += $price;
+    		$total += $price;
     	}
   	} 
 
