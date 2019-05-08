@@ -3,7 +3,7 @@
 	include("header.php"); 
 	include("fake_database.php");
 
-	session_start();
+	//session_start();
 
 	echo "Transaction Complete!";
 
