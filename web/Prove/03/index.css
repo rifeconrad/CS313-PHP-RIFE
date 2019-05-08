@@ -1,7 +1,9 @@
 #nav {
 	color: red;
+	text-decoration: none;
 }
 
 #active_link {
 	color: blue;
+	text-decoration: none;
 }
