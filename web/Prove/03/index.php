@@ -4,6 +4,13 @@
 
   $products = array("Apple", "Banana", "Orange", "Grapes");
   $prices = array("0.39", "0.19", "0.50", "4.00");
+
+  $found = "";
+  foreach ($products as $product) {
+    if (isset($_GET[$product])) {
+      $found = "FOUND";
+    }
+  }
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,12 +21,12 @@
   <?php
     for($i = 0; $i < count($products); $i++) {
   ?>
-
+  <p><?php echo $found; ?></p>
   <div id="product">
     <div id="product_img"></div>
     <div id="product_name"><?php echo $products[$i]; ?></div>
     <div id="product_price"><?php echo $prices[$i]; ?></div>
-    <a href=""></a>
+    <a href="index.php?<?php echo $products[$i]; ?>"></a>
   </div>
 
   <?php
