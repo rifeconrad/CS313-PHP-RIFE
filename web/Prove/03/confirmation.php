@@ -5,7 +5,7 @@
 
 	session_start();
 
-	echo "Transaction Complete!";
+	echo "Transaction Complete!<br>";
 
 	$purchased = array();
 	if (isset($_SESSION["cart"])) {
@@ -13,20 +13,23 @@
 		unset($_SESSION["cart"]);
 	}
 
+	echo "<div>Items Purchased</div>"
+
 	foreach ($purchased as $item) {
 ?>
 	<div id="confirmed_item">
 		<div id="name"> <?php echo $item->name; ?> </div>
 		<div id="price"> <?php echo $item->price; ?> </div>
-	</div>
+	</div><br>
 <?php
 	}
 
 	if (isset($_SESSION["total"])) {
-		echo "<div id='total'> Total: $total </div>";
+		$total = $_SESSION["total"];
+		echo "<div id='total'> Total: $total </div><br>";
 	}
 ?>
-
+	<div>Address</div>
 	<div id="address">
 		<div id="name"> 
 			<?php 
