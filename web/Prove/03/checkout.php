@@ -4,7 +4,7 @@
 	include("fake_database.php");
 
 	session_start();
-	
+
 	$total = 0.0;
 	if (isset($_SESSION["cart"])) {
     	foreach ($_SESSION["cart"] as $item) {
@@ -15,6 +15,7 @@
   	} 
 
   	echo "<p>Total: " . $total . "</p>";
+  	$_SESSION["total"] = $total;
 ?>
 
 <form name="checkout" action="confirmation.php" method="post">
