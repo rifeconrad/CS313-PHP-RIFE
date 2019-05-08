@@ -4,6 +4,7 @@
 	<title>Prove 03 Store</title>
 </head>
 <body>
+	<?php include("header.php"); ?>
 	<div id="here"></div>
 	<script>
 		var items = ["Food", "Cat", "Dog", "Fish"];

@@ -1,4 +1,6 @@
 <?php
+	include("header.php");
+
 	$total = 0;
 	foreach($_POST["item"] as $item){
 		$quantity = $_POST["q$item"];
