@@ -5,10 +5,10 @@
   $products = array("Apple", "Banana", "Orange", "Grapes");
   $prices = array("0.39", "0.19", "0.50", "4.00");
 
-  $found = "";
+  $found = 0;
   foreach ($products as $product) {
     if (isset($_GET[$product])) {
-      $found = "FOUND";
+      $found++;
     }
   }
 ?>
