@@ -26,7 +26,7 @@
 
 	if (isset($_SESSION["total"])) {
 		$total = $_SESSION["total"];
-		echo "<div id='total'> Total: $total </div><br>";
+		echo "<div id='total'> Total: $ $total </div><br>";
 	}
 ?>
 	<div>Address</div>
