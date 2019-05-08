@@ -1,5 +1,7 @@
 
 <?php
+  include("Product.php");
+
   session_start();
 
   $products = array("Apple", "Banana", "Orange", "Grapes");
@@ -9,11 +11,13 @@
     $_SESSION["cart"] = array();
   }
 
-  foreach ($products as $product) {
-    if (isset($_GET[$product])) {
-      if (!in_array($product, $_SESSION["cart"])) {
-        array_push($_SESSION["cart"], $product);
-      }
+  if (isset($_GET["product"]) && isset($_GET["price"])) {
+    $product_name = $_GET["product"];
+    $price = $_GET["price"];
+    $product = new Product($product_name, $price);
+
+    if (!in_array($product, $_SESSION["cart"])) {
+      array_push($_SESSION["cart"], $product);
     }
   }
 
@@ -33,7 +37,7 @@
     <div id="product_img"></div>
     <div id="product_name"><?php echo $products[$i]; ?></div>
     <div id="product_price"><?php echo $prices[$i]; ?></div>
-    <a href="index.php?<?php echo $products[$i]; ?>=<?php echo $prices[$i]; ?>">Add To Cart</a>
+    <a href="index.php?product=<?php echo $products[$i]; ?>&price=<?php echo $prices[$i]; ?>">Add To Cart</a>
   </div>
 
   <?php
