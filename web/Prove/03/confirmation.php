@@ -13,7 +13,7 @@
 		unset($_SESSION("cart"));
 	}
 
-	foreach ($purchased as $item) {
-		echo $item->name;
-	}
+	//foreach ($purchased as $item) {
+	//	echo $item->name;
+	//}
 ?>
