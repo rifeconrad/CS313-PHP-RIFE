@@ -5,10 +5,7 @@
 
   session_start();
 
-  // create an array of available products
-  // ACTING AS DATABASE
-  $products = array("Apple", "Banana", "Orange", "Grapes");
-  $prices = array("0.39", "0.19", "0.50", "4.00");
+  include("fake_database.php");
 
   // create the shopping cart, if not already done so
   if (!isset($_SESSION["cart"])) {
