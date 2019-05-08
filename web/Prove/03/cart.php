@@ -8,9 +8,11 @@
 		if (isset($_SESSION["cart"])) {
 
     		foreach ($_SESSION["cart"] as $item) {
-    			if (($item = array_search($item, $_SESSION["cart"])) !== false) {
-    				unset($_SESSION["cart"][$item]);
-    				break;
+    			if ($item->name === $product_name) {
+    				if (($item = array_search($item, $_SESSION["cart"])) !== false) {
+    					unset($_SESSION["cart"][$item]);
+    					break;
+					}
 				}
     		}
     	}
