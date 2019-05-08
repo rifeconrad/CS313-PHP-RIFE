@@ -9,7 +9,7 @@
 
 	$purchased = array();
 	if (isset($_SESSION("cart"))) {
-		$purchased = $_SESSION("cart");
+		//$purchased = $_SESSION("cart");
 		unset($_SESSION("cart"));
 	}
 
