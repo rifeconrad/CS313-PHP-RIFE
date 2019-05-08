@@ -18,8 +18,7 @@
 	foreach ($purchased as $item) {
 ?>
 	<div id="confirmed_item">
-		<div id="name"> <?php echo $item->name; ?> </div>
-		<div id="price"> <?php echo $item->price; ?> </div>
+		<div id="item"> <?php echo $item->name . " " . $item->price; ?> </div>
 	</div><br>
 <?php
 	}
