@@ -6,11 +6,15 @@
 	if (isset($_GET["remove"])) {
 		$product_name = $_GET["remove"];
 		if (isset($_SESSION["cart"])) {
+			$remove_item = "";
     		foreach ($_SESSION["cart"] as $item) {
     			if ($item->name === $product_name) {
-    				echo "HERE";
-    				unset($_SESSION["cart"][$item]);
+    				$remove_item = $item;
     			}
+    		}
+
+    		if ($remove_item != "") {
+    			unset($_SESSION["cart"][$remove_item]);
     		}
     	}
 	}
