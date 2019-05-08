@@ -25,15 +25,13 @@
       array_push($_SESSION["cart"], $product);
     }
   }
-
-  $found = count($_SESSION["cart"]);
 ?>
 <!DOCTYPE html>
 <html>
 <head>
   <title>Prove 03 Shopping</title>
 
-  <link rel="stylesheet" type="text/css" href="index.css">
+
 </head>
 <body>
   <?php
@@ -41,13 +39,13 @@
 
     for($i = 0; $i < count($products); $i++) {
   ?>
-  <p><?php echo $found; ?></p>
+
   <div id="product">
     <div id="product_img"></div>
     <div id="product_name"><?php echo $products[$i]; ?></div>
     <div id="product_price"><?php echo $prices[$i]; ?></div>
     <a href="index.php?product=<?php echo $products[$i]; ?>&price=<?php echo $prices[$i]; ?>">Add To Cart</a>
-  </div>
+  </div><hr>
 
   <?php
     }
