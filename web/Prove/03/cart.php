@@ -6,17 +6,12 @@
 	if (isset($_GET["remove"])) {
 		$product_name = $_GET["remove"];
 		if (isset($_SESSION["cart"])) {
-			$remove_item = "";
+
     		foreach ($_SESSION["cart"] as $item) {
-    			if (($item = array_search('word', $_SESSION["cart"])) !== false) {
+    			if (($item = array_search($item, $_SESSION["cart"])) !== false) {
     				echo "HO";
     				unset($_SESSION["cart"][$item]);
 				}
-    		}
-
-    		if ($remove_item != "") {
-    			echo "FOUND";
-    			unset($_SESSION["cart"][$remove_item]);
     		}
     	}
 	}
