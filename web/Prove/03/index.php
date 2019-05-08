@@ -26,7 +26,7 @@
     <div id="product_img"></div>
     <div id="product_name"><?php echo $products[$i]; ?></div>
     <div id="product_price"><?php echo $prices[$i]; ?></div>
-    <a href="index.php?<?php echo $products[$i]; ?>"></a>
+    <a href="index.php?<?php echo $products[$i]; ?>">Add To Cart</a>
   </div>
 
   <?php
