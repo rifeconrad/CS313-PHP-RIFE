@@ -9,6 +9,7 @@
 			$remove_item = "";
     		foreach ($_SESSION["cart"] as $item) {
     			if (($item = array_search('word', $_SESSION["cart"])) !== false) {
+    				echo "HO";
     				unset($_SESSION["cart"][$item]);
 				}
     		}
