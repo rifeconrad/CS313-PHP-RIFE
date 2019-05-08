@@ -8,6 +8,7 @@
 		if (isset($_SESSION["cart"])) {
     		foreach ($_SESSION["cart"] as $item) {
     			if ($item->name === $product_name) {
+    				echo "HERE";
     				unset($_SESSION["cart"][$item]);
     			}
     		}
