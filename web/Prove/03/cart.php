@@ -7,5 +7,7 @@
     	foreach ($cart as $item) {
     		echo "<p>" . $item->name . " " . $item->price . "</p>";
     	}
+  	} else {
+  		echo "NOPE";
   	}
 ?>
