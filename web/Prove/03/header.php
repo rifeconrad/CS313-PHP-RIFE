@@ -1,7 +1,7 @@
 <?php
 	session_start();
 
-	$active = "HOME";
+	$active = "";
 	if (isset($_GET["active"])) {
 		$active = $_GET["active"];
 	}
