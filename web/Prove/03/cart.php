@@ -9,8 +9,8 @@
 
     		foreach ($_SESSION["cart"] as $item) {
     			if (($item = array_search($item, $_SESSION["cart"])) !== false) {
-    				echo "HO";
     				unset($_SESSION["cart"][$item]);
+    				break;
 				}
     		}
     	}
