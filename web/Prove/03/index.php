@@ -17,6 +17,8 @@
     $product_name = $_GET["product"];
     $price = $_GET["price"];
     $product = new Product($product_name, $price);
+    $product->name = $product_name;
+    $product->price = $price;
 
     if (!in_array($product, $_SESSION["cart"])) {
       array_push($_SESSION["cart"], $product);
