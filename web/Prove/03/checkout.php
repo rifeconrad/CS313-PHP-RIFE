@@ -10,5 +10,5 @@
     	}
   	} 
 
-  	echo "<p>Total: " . $total . "</p>"
+  	echo "<p>Total: " . $total . "</p>";
 ?>
