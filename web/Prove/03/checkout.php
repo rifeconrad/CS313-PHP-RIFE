@@ -6,7 +6,7 @@
 	$total = 0;
 	if (isset($_SESSION["cart"])) {
     	foreach ($_SESSION["cart"] as $item) {
-    		total += floatval($item->price);
+    		//total += floatval($item->price);
     	}
   	} 
 
