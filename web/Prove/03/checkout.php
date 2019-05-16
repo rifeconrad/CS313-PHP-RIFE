@@ -9,6 +9,7 @@
 	if (isset($_SESSION["cart"])) {
     	foreach ($_SESSION["cart"] as $item) {
     		//echo gettype(floatval($item->price));
+    		// "0.39" => 0.39
     		$price = floatval($item->price);
     		$total += $price;
     	}

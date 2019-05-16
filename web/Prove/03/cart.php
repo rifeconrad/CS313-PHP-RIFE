@@ -25,7 +25,7 @@
     		if (isset($item->name)) {
 ?>
 
-	<div id="cart_display">
+	<div id="cart_display"> 
 		<div id="name"> <?php echo $item->name; ?> </div>
 		<div id="price"> <?php echo $item->price; ?> </div>
 		<a href="cart.php?remove=<?php echo $item->name; ?>&active=CART">Remove Item</a>
