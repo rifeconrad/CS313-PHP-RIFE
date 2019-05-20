@@ -50,9 +50,10 @@
 		echo $book;
 		foreach ($db->query("SELECT * FROM scriptures WHERE book='$book'") as $row)
 		{
+		  $id = $row["id"];
 		  echo $row['book'] . " " . $row['chapter'] 
 		  . ":" . $row['verse'] 
-		  . "<a href='scripture.php?row_id=$row["id"]'>Visit Scripture</a>";
+		  . "<a href='scripture.php?row_id=$id'>Visit Scripture</a>";
 		}
 	}
 ?>
