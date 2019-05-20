@@ -35,4 +35,23 @@
 	  $row['content'] . "<br>";
 	}
 	
+	echo "<hr>";
+?>
+	
+	<form name="book" method="post">
+		<input type="text"></input>
+		<button>Search</button>
+	</form>
+
+<?php	
+	if (isset($_POST['book']))
+	{
+		$book = $_POST['book'];
+
+		foreach ($db->query("SELECT * FROM scriptures WHERE book=$book") as $row)
+		{
+		  echo $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . " - " .
+		  $row['content'] . "<br>";
+		}
+	}
 ?>
