@@ -48,7 +48,7 @@
 	{
 		$book = $_POST['book'];
 		echo $book;
-		foreach ($db->query("SELECT * FROM scriptures WHERE book=$book") as $row)
+		foreach ($db->query("SELECT * FROM scriptures WHERE book='$book'") as $row)
 		{
 		  echo $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . " - " .
 		  $row['content'] . "<br>";
