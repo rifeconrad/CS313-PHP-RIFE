@@ -52,7 +52,7 @@
 		{
 		  echo $row['book'] . " " . $row['chapter'] 
 		  . ":" . $row['verse'] 
-		  . "<a href='scripture.php?row_id=$row['id']'>Visit Scripture</a>";
+		  . "<a href='scripture.php?row_id=$row["id"]'>Visit Scripture</a>";
 		}
 	}
 ?>
