@@ -1,23 +1,23 @@
 <?php
 try
 {
-	$database_name='postgres://cgojnkckkncmxf:e510ef76e9ff31ffd3069afa499c4d2bd748c1f2ea77e9da50f906dbe8f8c3e1@ec2-23-21-184-181.compute-1.amazonaws.com:5432/dfnorfi59oivff';
+  $dbUrl = getenv('DATABASE_URL');
 
+  $dbOpts = parse_url($dbUrl);
 
-  	$user = 'username';
- 	$password = 'password';
-    $db = new PDO('pgsql:host=localhost;dbname=$database_name', $user, $password);
+  $dbHost = $dbOpts["host"];
+  $dbPort = $dbOpts["port"];
+  $dbUser = $dbOpts["user"];
+  $dbPassword = $dbOpts["pass"];
+  $dbName = ltrim($dbOpts["path"],'/');
 
-    // this line makes PDO give us an exception when there are problems,
-    // and can be very helpful in debugging! (But you would likely want
-    // to disable it for production environments.)
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 
-    echo 'SUCCESS!';
+  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $ex)
 {
-    echo 'Error!: ' . $ex->getMessage();
-    die();
+  echo 'Error!: ' . $ex->getMessage();
+  die();
 }
 ?>
