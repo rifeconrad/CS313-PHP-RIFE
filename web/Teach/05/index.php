@@ -38,7 +38,7 @@
 	echo "<hr>";
 ?>
 	
-	<form name="book" method="post">
+	<form name="book" method="post" action="index.php">
 		<input type="text"></input>
 		<button>Search</button>
 	</form>
