@@ -1,6 +1,7 @@
 <?php
 try
 {
+	echo 'UPDATED';
 	$DATABASE_URL='enigmatic-ravine-85455';
 
 
