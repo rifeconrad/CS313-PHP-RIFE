@@ -22,7 +22,7 @@
   }
 
   if (isset($_POST['uname'])) {
-    $username = $_POST['uname'];
+    $username = htmlspecialchars($_POST['uname']);
     $password = "";
     foreach ($db->query('SELECT * FROM users') as $row)
     {
@@ -36,9 +36,12 @@
     echo "Successful Login!";
   } else {
     if (isset($_POST['password'])) {
-      $password = $_POST['password'];
+      $password = htmlspecialchars($_POST['password']);
 
-      $db->query('INSERT INTO users (username, password) VALUES ($username, $password)');
+      $db->prepare('INSERT INTO users (username, password) VALUES (:username, :password);');
+      $db->bindValud(':username', $username, PDO::PARAM_STR);
+      $db->bindValud(':password', $password, PDO::PARAM_STR);
+      $db->execute();
 
       echo "Account Created";
     }
