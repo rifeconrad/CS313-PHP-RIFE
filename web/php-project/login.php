@@ -22,7 +22,7 @@
   }
 ?>
 
-<form action="index.php">
+<form action="index.php" method="post">
   <div class="imgcontainer">
     <img src="img_avatar2.png" alt="Avatar" class="avatar">
   </div>
