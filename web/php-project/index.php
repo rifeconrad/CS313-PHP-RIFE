@@ -14,8 +14,6 @@
     $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-    echo 'Success!';
   }
   catch (PDOException $ex)
   {
@@ -24,11 +22,13 @@
   }
 
   if (isset($_POST['uname'])) {
+    echo "uname set ";
     $username = $_POST['uname'];
     $password = "";
     foreach ($db->query('SELECT * FROM users') as $row)
     {
       if ($row['username'] == $username) {
+        echo "password found ";
         $password = $row['password'];
       }
     }
