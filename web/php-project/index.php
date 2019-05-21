@@ -22,13 +22,11 @@
   }
 
   if (isset($_POST['uname'])) {
-    echo "uname set ";
     $username = $_POST['uname'];
     $password = "";
     foreach ($db->query('SELECT * FROM users') as $row)
     {
       if ($row['username'] == $username) {
-        echo "password found ";
         $password = $row['password'];
       }
     }
@@ -41,6 +39,8 @@
       $password = $_POST['password'];
 
       $db->query('INSERT INTO users (username, password) VALUES ($username, $password)');
+
+      echo "Account Created";
     }
   }
 ?>
