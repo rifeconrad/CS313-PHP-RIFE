@@ -12,5 +12,5 @@ img {
 	display: flex;
 	flex-direction: column;
 	
-	max-width 250;
+	max-width: 250px;
 }
