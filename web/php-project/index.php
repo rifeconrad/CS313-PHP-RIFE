@@ -25,6 +25,8 @@
 </head>
 <body>
 	<?php
+		include 'header.php';
+
 		foreach ($db->query('SELECT * FROM stock') as $row)
     	{
 	?>
