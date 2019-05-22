@@ -4,11 +4,13 @@ form {
 }
 
 img {
-	width: 10px;
-	height: 10px;
+	width: 100px;
+	height: 100px;
 }
 
 .container {
 	display: flex;
 	flex-direction: column;
+	
+	max-width 250;
 }
