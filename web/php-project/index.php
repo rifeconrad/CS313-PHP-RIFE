@@ -13,8 +13,10 @@
     	}
   	}
 
-  if (!$password || !isset($_POST['uname'])) {
+  if (!$password || (!isset($_POST['uname']) && !$_SESSION['logged_in'])) {
   	header('Location: login.php?attempt=fail'); 
+  } else {
+  	$_SESSION['logged_in'] = true;
   }
 ?>
 
@@ -29,6 +31,8 @@
 
 		foreach ($db->query('SELECT * FROM stock') as $row)
     	{
+
+    		echo "Welcome " . $username;
 	?>
 		<div>
 			<?php echo $row['name']; ?>

@@ -20,4 +20,6 @@
     echo 'Error!: ' . $ex->getMessage();
     die();
   }
+
+  session_start();
 ?>
