@@ -34,7 +34,7 @@
 		include 'header.php';
 
     if (isset($_SESSION['username'])) {
-    	echo "Welcome " . $_SESSION['username'];
+    	echo "<div id='user_welcome'>Welcome " . $_SESSION['username'] . "</div>";
     }
   ?>
   <table style="width:100%" id="product_container">

@@ -28,3 +28,8 @@ th {
 	color: white;
 	background-color: #32CD32;
 }
+
+#user_welcome {
+	color: #32CD32;
+	padding: 10px;	
+}
