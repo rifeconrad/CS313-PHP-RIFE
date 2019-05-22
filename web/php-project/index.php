@@ -2,6 +2,7 @@
 
 	require 'db_runner.php';
 
+	$username = "";
   	if (isset($_POST['uname'])) {
   	    $username = htmlspecialchars($_POST['uname']);
    	    $password_success = false;
@@ -29,10 +30,10 @@
 	<?php
 		include 'header.php';
 
+    	echo "Welcome " . $username;
+
 		foreach ($db->query('SELECT * FROM stock') as $row)
     	{
-
-    		echo "Welcome " . $username;
 	?>
 		<div>
 			<?php echo $row['name']; ?>
