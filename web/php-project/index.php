@@ -1,6 +1,7 @@
 <?php
 
 	require 'db_runner.php';
+  	session_start();
 
 	$username = "";
   	if (isset($_POST['uname'])) {
