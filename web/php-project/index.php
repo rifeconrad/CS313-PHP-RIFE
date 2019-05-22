@@ -5,7 +5,7 @@
 
   	if (isset($_POST['uname'])) {
   	  $username = htmlspecialchars($_POST['uname']);
-      $_SESSION['username'] = $username
+      $_SESSION['username'] = $username;
     	foreach ($db->query('SELECT * FROM users') as $row)
     	{
    	   		if ($row['username'] == $username && $_POST['psw'] ==  $row['password']) {
