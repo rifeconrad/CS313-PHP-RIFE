@@ -13,7 +13,29 @@
     	}
   	}
 
-  if (!$password) {
+  if (!$password || !isset($_POST['uname'])) {
   	header('Location: login.php?attempt=fail'); 
   }
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hobby Hero</title>
+</head>
+<body>
+	<?php
+		foreach ($db->query('SELECT * FROM stock') as $row)
+    	{
+	?>
+		<div>
+			<?php echo $row['name']; ?>
+			<?php echo $row['price']; ?>
+			<?php echo $row['quantity']; ?>
+			<?php echo $row['description']; ?>
+		</div>
+	<?php
+		}
+	?>
+</body>
+</html>
