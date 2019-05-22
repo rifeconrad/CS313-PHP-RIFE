@@ -1,24 +1,12 @@
 <?php
-  try
-  {
-    $dbUrl = getenv('DATABASE_URL');
+  require 'db_runner.php';
 
-    $dbOpts = parse_url($dbUrl);
-
-    $dbHost = $dbOpts["host"];
-    $dbPort = $dbOpts["port"];
-    $dbUser = $dbOpts["user"];
-    $dbPassword = $dbOpts["pass"];
-    $dbName = ltrim($dbOpts["path"],'/');
-
-    $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  }
-  catch (PDOException $ex)
-  {
-    echo 'Error!: ' . $ex->getMessage();
-    die();
+  if (isset($_GET['attempt'])) {  
+    if ($_GET['attempt'] == "fail") {
+?>
+      <p style="color:red;">Failed to login</p>
+<?php
+    }
   }
 ?>
 

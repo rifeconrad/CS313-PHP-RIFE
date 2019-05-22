@@ -1,49 +1,21 @@
 <?php
-  try
-  {
-    $dbUrl = getenv('DATABASE_URL');
 
-    $dbOpts = parse_url($dbUrl);
-
-    $dbHost = $dbOpts["host"];
-    $dbPort = $dbOpts["port"];
-    $dbUser = $dbOpts["user"];
-    $dbPassword = $dbOpts["pass"];
-    $dbName = ltrim($dbOpts["path"],'/');
-
-    $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  }
-  catch (PDOException $ex)
-  {
-    echo 'Error!: ' . $ex->getMessage();
-    die();
-  }
+	require 'db_runner.php';
 
   if (isset($_POST['uname'])) {
     $username = htmlspecialchars($_POST['uname']);
-    $password = "";
+    $password_success = false;
     foreach ($db->query('SELECT * FROM users') as $row)
     {
-      if ($row['username'] == $username) {
+      if ($row['username'] == $username && $_POST['psw'] ==  $row['password']) {
         $password = $row['password'];
       }
     }
   }
 
-  if ($password != "") {
+  if ($password) {
     echo "Successful Login!";
   } else {
-    if (isset($_POST['password'])) {
-      $password = htmlspecialchars($_POST['password']);
-
-      $db->prepare('INSERT INTO users (username, password) VALUES (:username, :password);');
-      $db->bindValud(':username', $username, PDO::PARAM_STR);
-      $db->bindValud(':password', $password, PDO::PARAM_STR);
-      $db->execute();
-
-      echo "Account Created";
-    }
+  	header('Location: login.php?attempt=fail'); 
   }
 ?>
