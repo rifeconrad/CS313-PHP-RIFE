@@ -5,6 +5,18 @@
 	background-color: gray;
 }
 
-#product_detail_container {
+#product_detail_container_name {
 	background-color: blue;
+}
+
+#product_detail_container_price {
+	background-color: red;
+}
+
+#product_detail_container_quantity {
+	background-color: green;
+}
+
+#product_detail_container_description {
+	background-color: yellow;
 }

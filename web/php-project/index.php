@@ -41,10 +41,10 @@
     	{
 	?>
 		<div id="product_container">
-			<div id="product_detail_container"> <?php echo $row['name']; ?> </div>
-			<div id="product_detail_container"> <?php echo $row['price']; ?> </div>
-			<div id="product_detail_container"> <?php echo $row['quantity']; ?> </div>
-			<div id="product_detail_container"> <?php echo $row['description']; ?> </div>
+			<div id="product_detail_container_name"> <?php echo $row['name']; ?> </div>
+			<div id="product_detail_container_price"> <?php echo $row['price']; ?> </div>
+			<div id="product_detail_container_quantity"> <?php echo $row['quantity']; ?> </div>
+			<div id="product_detail_container_description"> <?php echo $row['description']; ?> </div>
       <a href="index.php?item=<?php echo $row['name']; ?>"></a>
 		</div>
 	<?php
