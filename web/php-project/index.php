@@ -42,6 +42,7 @@
       <th>Name</th>
       <th>Price</th> 
       <th>Description</th>
+      <th></th>
     </tr>
   <?php
 		foreach ($db->query('SELECT * FROM stock') as $row)
