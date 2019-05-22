@@ -1,0 +1,13 @@
+#active_link {
+	text-decoration: none;
+	background-color: #32CD32;
+	color: white;
+	padding: 5px;
+}
+
+#non_active_link {
+	text-decoration: none;
+	background-color: white;
+	color: #32CD32;
+	padding: 5px;
+}
