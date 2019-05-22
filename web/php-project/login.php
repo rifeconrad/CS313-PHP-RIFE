@@ -3,6 +3,8 @@
 <html>
 <head>
   <title>Hobby Hero's Login Page</title>
+
+  <link rel="stylesheet" type="text/css" href="./stylesheets/login.css">
 </head>
 <body>
 
@@ -12,7 +14,7 @@
 
   <form action="index.php" method="post">
     <div class="imgcontainer">
-      <img src="https://render.fineartamerica.com/images/rendered/default/poster/8.000/8.000/break/images/artworkimages/medium/1/us-army-helmet-4-of-hearts-playing-card-drawing-aloysius-patrimonio.jpg" alt="Avatar" class="avatar">
+      <img src="https://render.fineartamerica.com/images/rendered/default/poster/8.000/8.000/break/images/artworkimages/medium/1/us-army-helmet-4-of-hearts-playing-card-drawing-aloysius-patrimonio.jpg" alt="logo" class="avatar">
     </div>
 
     <div class="container">
