@@ -12,7 +12,7 @@
 
   <form action="index.php" method="post">
     <div class="imgcontainer">
-      <img src="https://library.kissclipart.com/20180904/voe/kissclipart-cartoon-ww2-helmet-clipart-world-war-ii-combat-hel-fc2b99fd8748a2e4.jpg" alt="Avatar" class="avatar">
+      <img src="https://library.kissclipart.com/20180904/voe/kissclipart-cartoon-ww2-helmet-clipart-world-war-ii-combat-hel-fc2b99fd8748a2e4.png" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
