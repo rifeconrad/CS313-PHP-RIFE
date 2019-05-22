@@ -26,6 +26,8 @@
 <html>
 <head>
 	<title>Hobby Hero</title>
+
+  <link rel="stylesheet" type="text/css" href="./stylesheets/product.css">
 </head>
 <body>
 	<?php
@@ -38,11 +40,12 @@
 		foreach ($db->query('SELECT * FROM stock') as $row)
     	{
 	?>
-		<div>
-			<?php echo $row['name']; ?>
-			<?php echo $row['price']; ?>
-			<?php echo $row['quantity']; ?>
-			<?php echo $row['description']; ?>
+		<div id="product_container">
+			<div id="product_detail_container"> <?php echo $row['name']; ?> </div>
+			<div id="product_detail_container"> <?php echo $row['price']; ?> </div>
+			<div id="product_detail_container"> <?php echo $row['quantity']; ?> </div>
+			<div id="product_detail_container"> <?php echo $row['description']; ?> </div>
+      <a href="index.php?item=<?php echo $row['name']; ?>"></a>
 		</div>
 	<?php
 		}

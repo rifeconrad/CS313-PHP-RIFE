@@ -1,0 +1,10 @@
+#product_container {
+	display: flex;
+	flex-direction: row;
+	
+	background-color: gray;
+}
+
+#product_detail_container {
+	background-color: blue;
+}
