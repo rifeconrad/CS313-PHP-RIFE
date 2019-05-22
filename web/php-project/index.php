@@ -1,7 +1,7 @@
 <?php
 
 	require 'db_runner.php';
-  include './classes/product.php'
+  require './classes/product.php';
   session_start();
 
     if (!isset($_SESSION['cart'])) {
