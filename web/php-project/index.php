@@ -2,7 +2,7 @@
 
 	require 'db_runner.php';
   session_start();
-  
+
 	$username = "";
   	if (isset($_POST['uname'])) {
   	    $username = htmlspecialchars($_POST['uname']);
@@ -16,8 +16,6 @@
 
   if (!$_SESSION['password_success']) {
   	header('Location: login.php?attempt=fail'); 
-  } else {
-  	$_SESSION['logged_in'] = true;
   }
 ?>
 
