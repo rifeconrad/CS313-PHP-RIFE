@@ -36,19 +36,26 @@
     if (isset($_SESSION['username'])) {
     	echo "Welcome " . $_SESSION['username'];
     }
-
+  ?>
+  <table style="width:100%" id="product_container">
+    <tr>
+      <th>Name</th>
+      <th>Price</th> 
+      <th>Description</th>
+    </tr>
+  <?php
 		foreach ($db->query('SELECT * FROM stock') as $row)
     	{
 	?>
-		<div id="product_container">
-			<div id="product_detail_container"> <?php echo $row['name']; ?> </div>
-			<div id="product_detail_container"> <?php echo $row['price']; ?> </div>
-			<div id="product_detail_container"> <?php echo $row['quantity']; ?> </div>
-			<div id="product_detail_container"> <?php echo $row['description']; ?> </div>
-      <a href="index.php?item=<?php echo $row['name']; ?>">Add to Cart!</a><hr>
-		</div>
+    <tr>
+			<td><div id="product_detail_container"> <?php echo $row['name']; ?> </div></td>
+			<td><div id="product_detail_container"> <?php echo $row['price']; ?> </div></td>
+			<td><div id="product_detail_container"> <?php echo $row['description']; ?> </div></td>
+      <td><a href="index.php?item=<?php echo $row['name']; ?>">Add to Cart!</a></td>
+		<tr>
 	<?php
 		}
 	?>
+  </table>
 </body>
 </html>
