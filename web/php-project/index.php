@@ -51,7 +51,7 @@
 			<td><div id="product_detail_container"> <?php echo $row['name']; ?> </div></td>
 			<td><div id="product_detail_container"> <?php echo $row['price']; ?> </div></td>
 			<td><div id="product_detail_container"> <?php echo $row['description']; ?> </div></td>
-      <td><a href="index.php?item=<?php echo $row['name']; ?>">Add to Cart!</a></td>
+      <td><a id="add_to_cart" href="index.php?item=<?php echo $row['name']; ?>">Add to Cart!</a></td>
 		<tr>
 	<?php
 		}

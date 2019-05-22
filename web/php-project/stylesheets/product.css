@@ -10,8 +10,9 @@
 	max_width: 100px;
 }
 
-a {
+#add_to_cart {
 	text-decoration: none;
 	background-color: #32CD32;
 	color: white;
+	padding: 5px;
 }
