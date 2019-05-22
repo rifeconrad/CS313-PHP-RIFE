@@ -5,18 +5,12 @@
 	background-color: #98FB98;
 }
 
-#product_detail_container_name {
+#product_detail_container {
 	padding: 10px;
 }
 
-#product_detail_container_price {
-	padding: 10px;
-}
-
-#product_detail_container_quantity {
-	padding: 10px;
-}
-
-#product_detail_container_description {
-	padding: 10px;
+a {
+	text-decoration: none;
+	background-color: #32CD32;
+	color: white;
 }
