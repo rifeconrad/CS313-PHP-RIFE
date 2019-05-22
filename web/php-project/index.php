@@ -3,6 +3,10 @@
 	require 'db_runner.php';
   session_start();
 
+    if (!isset($_SESSION['cart'])) {
+      $_SESSION['cart'] = array();
+    }
+
   	if (isset($_POST['uname'])) {
   	  $username = htmlspecialchars($_POST['uname']);
       $_SESSION['username'] = $username;
@@ -20,6 +24,21 @@
   if (!$_SESSION['password_success']) {
   	header('Location: login.php?attempt=fail'); 
   }
+
+  if (isset($_GET['item'])) {
+    $item = htmlspecialchars($_GET['item']);
+
+    foreach ($db->query('SELECT * FROM stock') as $row)
+    {
+      if ($row['name'] == $item) {          
+        $product = new Product($row['name'], $row['price']);
+
+        if (!in_array($product, $_SESSION["cart"])) {
+          array_push($_SESSION["cart"], $product); 
+        }
+      }
+    }
+  }
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +53,7 @@
 		include 'header.php';
 
     if (isset($_SESSION['username'])) {
-    	echo "<div id='user_welcome'>Welcome " . $_SESSION['username'] . "</div>";
+    	echo "<div id='user_welcome'>Welcome " . $_SESSION['username'] . "!</div>";
     }
   ?>
   <table style="width:100%" id="product_container">
