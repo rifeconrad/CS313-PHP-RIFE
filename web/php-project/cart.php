@@ -16,7 +16,7 @@
 			foreach ($_SESSION['cart'] as $item) {
 	?>
 				<div> 
-					<?php echo $item->name; ?> 
+					<?php echo $item['name']; ?> 
 				</div>
 	<?php
 			}
