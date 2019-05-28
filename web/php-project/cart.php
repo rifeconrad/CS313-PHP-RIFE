@@ -1,5 +1,8 @@
 
 <?php 
+	
+ 	require './classes/product.php';
+
 	session_start(); 
 ?>
 <!DOCTYPE html>
@@ -10,7 +13,6 @@
 <body>
 	<?php
 		include 'header.php';
- 		require './classes/product.php';
 
 		if (isset($_SESSION['cart'])) {
 			$i = 0;
