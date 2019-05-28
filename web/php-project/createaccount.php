@@ -52,6 +52,11 @@
 			}
 		?>
 
+		<form class="form_button" action="login.php">
+		    <button type="submit">Back to Login</button>
+		</form>
+		<br>
+
 		<form class="form_container" action="createaccount.php" method="post">
 		    <div class="container">
 			  
