@@ -13,20 +13,20 @@
 
     if (isset($_GET['logout'])) {
       if ($_GET['logout'] == "TRUE") {
-        if (isset($_SESSION['password_success'])) {
-          if ($_SESSION['password_success'] == true) {
-            $_SESSION['password_success'] = false;
-            echo "removing password success status";
-          }
-        }
+
+      }
+      else if (isset($_SESSION['password_success'])) {
+        if ($_SESSION['password_success']) {
+        header('Location: index.php?active=HOME'); 
+      }
       }
     }
 
-    if (isset($_SESSION['password_success'])) {
+    /*if (isset($_SESSION['password_success'])) {
       if ($_SESSION['password_success']) {
         header('Location: index.php?active=HOME'); 
       }
-    }
+    }*/
 
     require 'db_runner.php';
   ?>
