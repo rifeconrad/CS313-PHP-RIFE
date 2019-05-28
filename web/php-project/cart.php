@@ -18,7 +18,7 @@
 	?>
 				<div> 
 					<?php echo $i; ?>
-					<?php echo $item['name']; ?> 
+					<?php echo $item->name; ?> 
 				</div>
 	<?php
 
