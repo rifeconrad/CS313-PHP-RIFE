@@ -32,10 +32,12 @@
 
     foreach ($db->query('SELECT * FROM stock') as $row)
     {
+      echo "looping<br>";
       if ($row['name'] == $item) {          
         $product = new Product($row['name'], $row['price']);
-
+        echo "found product<br>";
         if (!in_array($product, $_SESSION["cart"])) {
+          echo "array push";
           array_push($_SESSION["cart"], $product); 
         }
       }

@@ -8,9 +8,7 @@
 	<title>Hobby Hero</title>
 </head>
 <body>
-	<p>TEST</p>
 	<?php
-	echo "here";
 		include 'header.php';
 
 		if (isset($_SESSION['cart'])) {
