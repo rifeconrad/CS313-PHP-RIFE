@@ -17,8 +17,9 @@
       }
       else if (isset($_SESSION['password_success'])) {
         if ($_SESSION['password_success']) {
-        header('Location: index.php?active=HOME'); 
-      }
+          $_SESSION['password_success'] = false;
+          header('Location: index.php?active=HOME'); 
+        }
       }
     }
 
