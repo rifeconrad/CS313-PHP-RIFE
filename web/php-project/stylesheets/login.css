@@ -19,3 +19,8 @@ img {
 	text-align: center;
 	display: inline-block;
 }
+
+.form_button {
+	max-width: 250px;
+	min-width: 150px;
+}
