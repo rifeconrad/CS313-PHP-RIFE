@@ -79,7 +79,9 @@
 	?>
   </table>
 
-  <form action="login.php?active=NONE">
+  <br>
+  <form action="login.php" method="post">
+    <input style="display:none;" type="text" value="out" name="log_status">
     <button type='submit'>Logout</button>
   </form>
 </body>

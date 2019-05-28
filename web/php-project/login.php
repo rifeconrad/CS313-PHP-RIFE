@@ -11,9 +11,9 @@
   <?php
     session_start();
 
-    if (isset($_GET['active'])) {
-      echo 'active set';
-      if ($_GET['active'] == "NONE") {
+    if (isset($_POST['log_status'])) {
+      echo 'log_status set';
+      if ($_POST['log_status'] == "out") {
         echo 'NONE found';
         $_SESSION['password_success'] = false;
       }
