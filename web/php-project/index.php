@@ -79,7 +79,7 @@
 	?>
   </table>
 
-  <form action='login.php?active=NONE'>
+  <form action="login.php?active=NONE">
     <button type='submit'>Logout</button>
   </form>
 </body>
