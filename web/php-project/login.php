@@ -12,7 +12,9 @@
     session_start();
 
     if (isset($_GET['log'])) {
+      echo 'log set';
       if ($_GET['log'] == "OUT") {
+        echo 'out found';
         $_SESSION['password_success'] = false;
       }
       else if (isset($_SESSION['password_success'])) {
