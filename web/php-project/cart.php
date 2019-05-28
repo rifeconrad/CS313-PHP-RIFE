@@ -14,10 +14,9 @@
 
 		if (isset($_SESSION['cart'])) {
 			foreach ($_SESSION['cart'] as $item) {
-				echo "good";
 	?>
 				<div> 
-					<?php echo $item . " " . $item->price; ?> 
+					<?php echo "text"; ?> 
 				</div>
 	<?php
 			}
