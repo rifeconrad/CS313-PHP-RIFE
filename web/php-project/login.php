@@ -13,12 +13,16 @@
 
     if (isset($_SESSION['password_success'])) {
       if ($_SESSION['password_success']) {
-        header('Location: index.php'); 
+        header('Location: index.php?active=HOME'); 
       }
     }
 
     require 'db_runner.php';
   ?>
+  
+  <form action="createaccount.php">
+    <button type="submit">Create Account</button>
+  </form>
   
   <form class="form_container" action="index.php?active=HOME" method="post">
     <div class="imgcontainer">
