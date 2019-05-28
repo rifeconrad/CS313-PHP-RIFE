@@ -20,10 +20,10 @@
     require 'db_runner.php';
   ?>
   
-  <form action="createaccount.php">
+  <form class="form_container" action="createaccount.php">
     <button type="submit">Create Account</button>
   </form>
-  
+
   <form class="form_container" action="index.php?active=HOME" method="post">
     <div class="imgcontainer">
       <img src="https://render.fineartamerica.com/images/rendered/default/poster/8.000/8.000/break/images/artworkimages/medium/1/us-army-helmet-4-of-hearts-playing-card-drawing-aloysius-patrimonio.jpg" alt="logo" class="avatar">
