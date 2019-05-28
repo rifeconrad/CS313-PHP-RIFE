@@ -12,7 +12,7 @@
 
 			if (isset($_GET['repeat'])) {
 				if ($_GET['repeat'] == 'TRUE') {
-					echo "<p style='color:red;'>Username Already Exists</p>"
+					echo "<p style='color:red;'>Username Already Exists</p>";
 				}
 			}
 
