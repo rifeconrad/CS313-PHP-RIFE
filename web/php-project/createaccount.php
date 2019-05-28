@@ -10,6 +10,12 @@
 		<?php
 			require 'db_runner.php';
 
+			if (isset($_GET['repeat'])) {
+				if ($_GET['repeat'] == 'TRUE') {
+					echo "<p style='color:red;'>Username Already Exists</p>"
+				}
+			}
+
 			$username = "";
 			$password = "";
 			$pass_conf = "";
@@ -24,13 +30,25 @@
 			}
 
 			if ($password == $pass_conf && $password != "" && $pass_conf != "") {
-				$db_insert = $db->prepare('INSERT INTO users(username, password) VALUES(:username, :password)');
+				$repeat = false;
+				foreach ($db->query('SELECT * FROM users') as $row)
+		    	{
+		   	   		if ($row['username'] == $username) {
+		    	    	$repeat = true;
+		    	  	}
+		    	}
 
-				$db_insert->bindValue(':username', $username, PDO::PARAM_STR);
-				$db_insert->bindValue(':password', $password, PDO::PARAM_STR);
-				$db_insert->execute();
+				if (!$repeat) {
+					$db_insert = $db->prepare('INSERT INTO users(username, password) VALUES(:username, :password)');
 
-				header("Location: login.php");
+					$db_insert->bindValue(':username', $username, PDO::PARAM_STR);
+					$db_insert->bindValue(':password', $password, PDO::PARAM_STR);
+					$db_insert->execute();
+
+					header("Location: login.php");
+				} else {
+					header("Location: createaccount.php?repeat=TRUE");
+				}
 			}
 		?>
 
