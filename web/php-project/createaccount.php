@@ -52,7 +52,7 @@
 			}
 		?>
 
-		<form class="form_button" action="login.php">
+		<form class="form_container" action="login.php">
 		    <button type="submit">Back to Login</button>
 		</form>
 		<br>
