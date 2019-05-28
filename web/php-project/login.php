@@ -16,6 +16,7 @@
         if (isset($_SESSION['password_success'])) {
           if ($_SESSION['password_success'] == true) {
             $_SESSION['password_success'] = false;
+            echo "removing password success status";
           }
         }
       }
