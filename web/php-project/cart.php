@@ -11,6 +11,8 @@
 	<?php
 		include 'header.php';
 
+		session_start();
+
 		if (isset($_SESSION['cart'])) {
 			foreach ($_SESSION['cart'] as $item) {
 	?>
