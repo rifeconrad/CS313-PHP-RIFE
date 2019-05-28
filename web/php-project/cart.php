@@ -11,12 +11,13 @@
 	<?php
 		include 'header.php';
 
-		session_start();
-
 		if (isset($_SESSION['cart'])) {
 			foreach ($_SESSION['cart'] as $item) {
+				echo "good";
 	?>
-				<div> <?php echo $item->name . " " . $item->price; ?> </div>
+				<div> 
+					<?php echo $item->name . " " . $item->price; ?> 
+				</div>
 	<?php
 			}
 		}
