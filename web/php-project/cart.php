@@ -14,8 +14,8 @@
 	<?php
 		include 'header.php';
 
+		$total = 0;
 		if (isset($_SESSION['cart'])) {
-			$total = 0;
 			foreach ($_SESSION['cart'] as $item) {
 				$total += $item->price;
 	?>
