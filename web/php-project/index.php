@@ -52,6 +52,9 @@
 <body>
 	<?php
 		include 'header.php';
+    echo "<form action='login.php?logout=TRUE'>
+            <button type='submit'>Logout</button>
+          </form>";
 
     if (isset($_SESSION['username'])) {
     	echo "<div id='user_welcome'>Welcome " . $_SESSION['username'] . "!</div>";

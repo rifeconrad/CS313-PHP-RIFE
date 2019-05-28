@@ -11,6 +11,16 @@
   <?php
     session_start();
 
+    if (isset($_GET['logout'])) {
+      if ($_GET['logout'] == "TRUE") {
+        if (isset($_SESSION['password_success'])) {
+          if ($_SESSION['password_success'] == true) {
+            $_SESSION['password_success'] = false;
+          }
+        }
+      }
+    }
+
     if (isset($_SESSION['password_success'])) {
       if ($_SESSION['password_success']) {
         header('Location: index.php?active=HOME'); 
