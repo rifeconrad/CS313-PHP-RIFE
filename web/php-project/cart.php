@@ -10,6 +10,7 @@
 <body>
 	<?php
 		include 'header.php';
+		include 'product.php';
 
 		if (isset($_SESSION['cart'])) {
 			foreach ($_SESSION['cart'] as $item) {
