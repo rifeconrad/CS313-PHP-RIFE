@@ -52,9 +52,6 @@
 <body>
 	<?php
 		include 'header.php';
-    echo "<form action='login.php?active=NONE'>
-            <button type='submit'>Logout</button>
-          </form>";
 
     if (isset($_SESSION['username'])) {
     	echo "<div id='user_welcome'>Welcome " . $_SESSION['username'] . "!</div>";
@@ -81,5 +78,9 @@
 		}
 	?>
   </table>
+
+  <form action='login.php?active=NONE'>
+    <button type='submit'>Logout</button>
+  </form>
 </body>
 </html>
