@@ -15,19 +15,20 @@
 		include 'header.php';
 
 		if (isset($_SESSION['cart'])) {
-			$i = 0;
+			$total = 0;
 			foreach ($_SESSION['cart'] as $item) {
+				$total += $item->price;
 	?>
 				<div> 
-					<?php echo get_class($item); ?>
-					<?php echo $i; ?>
-					<?php echo $item->name; ?> 
+					<?php echo $item->name . " " . $item->price; ?> 
 				</div>
 	<?php
 
 				$i++;
 			}
 		}
+
+		echo "Total: " . total . "<br>";
 	?>
 </body>
 </html>
