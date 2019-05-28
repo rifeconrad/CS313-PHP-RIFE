@@ -28,6 +28,7 @@
 
   if (isset($_GET['item'])) {
     $item = htmlspecialchars($_GET['item']);
+    $price = htmlspecialchars($_GET['price']);
 
     foreach ($db->query('SELECT * FROM stock') as $row)
     {
@@ -72,7 +73,7 @@
 			<td><div id="product_detail_container"> <?php echo $row['name']; ?> </div></td>
 			<td><div id="product_detail_container"> <?php echo $row['price']; ?> </div></td>
 			<td><div id="product_detail_container"> <?php echo $row['description']; ?> </div></td>
-      <td><a id="add_to_cart" href="index.php?active=HOME&item=<?php echo $row['name']; ?>">Add to Cart!</a></td>
+      <td><a id="add_to_cart" href="index.php?active=HOME&item=<?php echo $row['name']; ?>&price=<?php echo $row['price']; ?>">Add to Cart!</a></td>
 		<tr>
 	<?php
 		}
