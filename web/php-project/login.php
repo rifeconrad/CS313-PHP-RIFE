@@ -11,11 +11,10 @@
   <?php
     session_start();
 
-    echo 'here';
-    if (isset($_GET['log'])) {
-      echo 'log set';
-      if ($_GET['log'] == "OUT") {
-        echo 'out found';
+    if (isset($_GET['active'])) {
+      echo 'active set';
+      if ($_GET['active'] == "NONE") {
+        echo 'NONE found';
         $_SESSION['password_success'] = false;
       }
       else if (isset($_SESSION['password_success'])) {
