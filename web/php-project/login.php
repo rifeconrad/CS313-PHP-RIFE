@@ -13,11 +13,10 @@
 
     if (isset($_GET['logout'])) {
       if ($_GET['logout'] == "TRUE") {
-
+        $_SESSION['password_success'] = false;
       }
       else if (isset($_SESSION['password_success'])) {
         if ($_SESSION['password_success']) {
-          $_SESSION['password_success'] = false;
           header('Location: index.php?active=HOME'); 
         }
       }
