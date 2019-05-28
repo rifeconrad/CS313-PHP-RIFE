@@ -9,9 +9,32 @@
 
 		<?php
 			require 'db_runner.php';
+
+			$username = "";
+			$password = "";
+			$pass_conf = "";
+			if (isset($_POST['uname'])) {
+				$username = htmlspecialchars($_POST['uname']));
+			}
+			if (isset($_POST['psw'])) {
+				$password = htmlspecialchars($_POST['psw']));
+			}
+			if (isset($_POST['pswc'])) {
+				$pass_conf = htmlspecialchars($_POST['pswc']));
+			}
+
+			if ($password == $pass_conf) {
+				$db_insert = $db->prepare('INSERT INTO users(username, password) VALUES(:username, :password)');
+
+				$db_insert->bindValue(':username', $username, PDO::PARAM_STR);
+				$db_insert->bindValue(':password', $password, PDO::PARAM_STR);
+				$db_insert->execute();
+
+				header("Location: index.php");
+			}
 		?>
 
-		<form class="form_container" action="index.php?active=HOME" method="post">
+		<form class="form_container" action="createaccount.php" method="post">
 		    <div class="container">
 			  
 		      <label for="uname"><b>Username</b></label>
@@ -19,6 +42,9 @@
 
 		      <label for="psw"><b>Password</b></label>
 		      <input type="password" placeholder="Enter Password" name="psw" maxlength="16" minlength="8" required><br>
+
+		      <label for="psw"><b>Confirm Password</b></label>
+		      <input type="password" placeholder="Enter Password" name="pswc" maxlength="16" minlength="8" required><br>
 
 		      <button type="submit">Create Account</button>
 		    </div>
