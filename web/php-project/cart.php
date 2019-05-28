@@ -10,7 +10,7 @@
 <body>
 	<?php
 		include 'header.php';
-		include './classes/product.php';
+ 		require './classes/product.php';
 
 		if (isset($_SESSION['cart'])) {
 			$i = 0;
