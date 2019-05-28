@@ -28,7 +28,7 @@
 			}
 		}
 
-		echo "Total: " . total . "<br>";
+		echo "Total: " . $total . "<br>";
 	?>
 </body>
 </html>
