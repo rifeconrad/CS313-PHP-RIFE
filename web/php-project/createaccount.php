@@ -30,7 +30,7 @@
 				$db_insert->bindValue(':password', $password, PDO::PARAM_STR);
 				$db_insert->execute();
 
-				header("Location: index.php");
+				header("Location: login.php");
 			}
 		?>
 
