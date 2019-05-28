@@ -16,7 +16,7 @@
 			foreach ($_SESSION['cart'] as $item) {
 	?>
 				<div> 
-					<?php echo "text"; ?> 
+					<?php echo gettype($item); ?> 
 				</div>
 	<?php
 			}
