@@ -39,6 +39,7 @@
         if (!in_array($product, $_SESSION["cart"])) {
           echo "array push";
           array_push($_SESSION["cart"], $product); 
+          break;
         }
       }
     }
