@@ -23,7 +23,7 @@
 				$pass_conf = htmlspecialchars($_POST['pswc']);
 			}
 
-			if ($password == $pass_conf) {
+			if ($password == $pass_conf && $password != "" && $pass_conf != "") {
 				$db_insert = $db->prepare('INSERT INTO users(username, password) VALUES(:username, :password)');
 
 				$db_insert->bindValue(':username', $username, PDO::PARAM_STR);
