@@ -17,7 +17,7 @@
 				echo "good";
 	?>
 				<div> 
-					<?php echo $item->name . " " . $item->price; ?> 
+					<?php echo $item . " " . $item->price; ?> 
 				</div>
 	<?php
 			}
