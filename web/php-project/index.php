@@ -52,7 +52,7 @@
 <body>
 	<?php
 		include 'header.php';
-    echo "<form action='login.php?logout=TRUE'>
+    echo "<form action='login.php?log=OUT'>
             <button type='submit'>Logout</button>
           </form>";
 

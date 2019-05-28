@@ -11,8 +11,8 @@
   <?php
     session_start();
 
-    if (isset($_GET['logout'])) {
-      if ($_GET['logout'] == "TRUE") {
+    if (isset($_GET['log'])) {
+      if ($_GET['log'] == "OUT") {
         $_SESSION['password_success'] = false;
       }
       else if (isset($_SESSION['password_success'])) {
