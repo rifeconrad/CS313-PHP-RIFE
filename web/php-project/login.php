@@ -11,6 +11,7 @@
   <?php
     session_start();
 
+    echo 'here';
     if (isset($_GET['log'])) {
       echo 'log set';
       if ($_GET['log'] == "OUT") {
