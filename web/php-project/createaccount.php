@@ -14,13 +14,13 @@
 			$password = "";
 			$pass_conf = "";
 			if (isset($_POST['uname'])) {
-				$username = htmlspecialchars($_POST['uname']));
+				$username = htmlspecialchars($_POST['uname']);
 			}
 			if (isset($_POST['psw'])) {
-				$password = htmlspecialchars($_POST['psw']));
+				$password = htmlspecialchars($_POST['psw']);
 			}
 			if (isset($_POST['pswc'])) {
-				$pass_conf = htmlspecialchars($_POST['pswc']));
+				$pass_conf = htmlspecialchars($_POST['pswc']);
 			}
 
 			if ($password == $pass_conf) {
