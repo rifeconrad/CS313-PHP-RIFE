@@ -9,6 +9,14 @@
 <body>
 
   <?php
+    start_session();
+
+    if (isset($_SESSION['password_success'])) {
+      if ($_SESSION['password_success']) {
+        header('Location: index.php'); 
+      }
+    }
+
     require 'db_runner.php';
   ?>
   
