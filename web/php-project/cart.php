@@ -17,6 +17,7 @@
 			foreach ($_SESSION['cart'] as $item) {
 	?>
 				<div> 
+					<?php echo get_class($item); ?>
 					<?php echo $i; ?>
 					<?php echo $item->name; ?> 
 				</div>
