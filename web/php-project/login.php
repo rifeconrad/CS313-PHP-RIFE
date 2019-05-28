@@ -9,7 +9,7 @@
 <body>
 
   <?php
-    start_session();
+    session_start();
 
     if (isset($_SESSION['password_success'])) {
       if ($_SESSION['password_success']) {
