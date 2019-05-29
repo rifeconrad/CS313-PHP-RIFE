@@ -8,7 +8,12 @@
 	<?php
 		include 'header.php';
 
-		if (!isset($_SESSION['cart']) || !empty($_SESSION['cart'])) {
+		if (isset($_POST['confirmed'])) {
+			if ($_POST['confirmed'] == "TRUE") {
+				<p style="color:red;">Purchase Complete!</p>
+			}
+		}
+		else if (!isset($_SESSION['cart']) || !empty($_SESSION['cart'])) {
 	?>
 
 	<form action="checkout.php?active=CHECKOUT&confirmed=TRUE" method="post">
