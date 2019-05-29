@@ -44,4 +44,4 @@
 		echo "<tr><td></td><td></td><td></td><td>Total: $" . $total . "</td></tr>";
 	?>
 </body>
-<td></td><td></td><td></htm</td>l>
+<html>
