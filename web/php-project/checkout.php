@@ -8,15 +8,15 @@
 	<?php
 		include 'header.php';
 
-		if (isset($_POST['confirmed'])) {
-			if ($_POST['confirmed'] == "TRUE") {
+		if (isset($_POST['purchase'])) {
+			if ($_POST['purchase'] == "confirmed") {
 				echo "<p style='color:red;'>Purchase Complete!</p>";
 			}
 		}
 		else if (!isset($_SESSION['cart']) || !empty($_SESSION['cart'])) {
 	?>
 
-	<form action="checkout.php?active=CHECKOUT&confirmed=TRUE" method="post">
+	<form action="checkout.php?active=CHECKOUT&purchase=confirmed" method="post">
 		First Name <input type="text" name="first_name" required></input><br>
 		Last Name <input type="text" name="last_name" required></input><br>
 		Street <input type="text" name="street" required></input><br>
