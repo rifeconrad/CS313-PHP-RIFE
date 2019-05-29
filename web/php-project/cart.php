@@ -17,7 +17,7 @@
 		$total = 0;
 		if (isset($_SESSION['cart'])) {
 			foreach ($_SESSION['cart'] as $item) {
-				$total = $total + $item->price;
+				$total = $total + floatval($item->price);
 	?>
 				<div> 
 					<?php echo $item->name . " " . $item->price; ?> 
