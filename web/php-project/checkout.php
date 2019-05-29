@@ -8,8 +8,8 @@
 	<?php
 		include 'header.php';
 
-		if (isset($_POST['purchase'])) {
-			if ($_POST['purchase'] == "confirmed") {
+		if (isset($_GET['purchase'])) {
+			if ($_GET['purchase'] == "confirmed") {
 				echo "<p style='color:red;'>Purchase Complete!</p>";
 			}
 		}
