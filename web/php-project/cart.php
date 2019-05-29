@@ -14,7 +14,7 @@
 </head>
 <body>
 
-	<table style="width:100%" id="product_container">
+	<table style="width:50%" id="product_container">
     <tr>
       <th>Name</th>
       <th>Price</th> 
