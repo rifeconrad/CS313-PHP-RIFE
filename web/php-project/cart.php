@@ -11,6 +11,14 @@
 	<title>Hobby Hero</title>
 </head>
 <body>
+
+	<table style="width:100%" id="product_container">
+    <tr>
+      <th>Name</th>
+      <th>Price</th> 
+      <th>Description</th>
+      <th>Price</th>
+    </tr>
 	<?php
 		include 'header.php';
 
@@ -20,16 +28,20 @@
 				$price = ltrim($item->price, '$');
 				$total = $total + floatval($price);
 	?>
-				<div> 
-					<?php echo $item->name . " " . $item->price; ?> 
-				</div>
+			<tr>
+				<td>
+					<div> 
+						<?php echo $item->name . " " . $item->price; ?> 
+					</div>
+				</td>
+			</tr>
 	<?php
 
 				$i++;
 			}
 		}
 
-		echo "Total: " . $total . "<br>";
+		echo "<tr><td></td><td></td><td></td><td>Total: $" . $total . "</td></tr>";
 	?>
 </body>
-</html>
+<td></td><td></td><td></htm</td>l>
