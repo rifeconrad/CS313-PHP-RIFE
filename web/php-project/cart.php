@@ -9,6 +9,8 @@
 <html>
 <head>
 	<title>Hobby Hero</title>
+
+	<link rel="stylesheet" type="text/css" href="./stylesheets/product.css">
 </head>
 <body>
 
