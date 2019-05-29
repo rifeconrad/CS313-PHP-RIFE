@@ -10,7 +10,7 @@
 
 		if (isset($_POST['confirmed'])) {
 			if ($_POST['confirmed'] == "TRUE") {
-				<p style="color:red;">Purchase Complete!</p>
+				echo "<p style='color:red;'>Purchase Complete!</p>";
 			}
 		}
 		else if (!isset($_SESSION['cart']) || !empty($_SESSION['cart'])) {
