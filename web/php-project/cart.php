@@ -16,8 +16,6 @@
     <tr>
       <th>Name</th>
       <th>Price</th> 
-      <th>Description</th>
-      <th>Price</th>
     </tr>
 	<?php
 		include 'header.php';
@@ -30,9 +28,10 @@
 	?>
 			<tr>
 				<td>
-					<div> 
-						<?php echo $item->name . " " . $item->price; ?> 
-					</div>
+					<?php echo $item->name; ?>
+				</td>
+				<td>
+					<?php echo $item->price; ?>
 				</td>
 			</tr>
 	<?php
@@ -41,7 +40,7 @@
 			}
 		}
 
-		echo "<tr><td></td><td></td><td></td><td>Total: $" . $total . "</td></tr>";
+		echo "<tr><td></td><td>Total: $" . $total . "</td></tr>";
 	?>
 </body>
 <html>
