@@ -42,7 +42,7 @@
 			}
 		}
 
-		echo "<tr><td></td><td>Total: $" . $total . "</td></tr>";
+		echo "<tr><td></td><td></td></tr><tr><td>TOTAL</td><td>$" . $total . "</td></tr>";
 	?>
 </body>
 <html>
