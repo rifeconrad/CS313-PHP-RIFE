@@ -7,6 +7,8 @@
 <body>
 	<?php
 		include 'header.php';
+
+		if (!isset($_SESSION['cart']) || !empty($_SESSION['cart'])) {
 	?>
 
 	<form action="checkout.php?active=CHECKOUT&confirmed=TRUE" method="post">
@@ -17,5 +19,13 @@
 		State <input type="text" name="state" required></input><br>
 		<button type="submit">Confirm Purchase</button>
 	</form>
+
+	<?php
+		} else {
+	?>
+	<p style="color:red;">NO ITEMS IN CART</p>
+	<?php
+		}
+	?>
 </body>
 </html>
