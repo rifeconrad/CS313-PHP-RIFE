@@ -11,6 +11,7 @@
 		if (isset($_GET['purchase'])) {
 			if ($_GET['purchase'] == "confirmed") {
 				echo "<p style='color:red;'>Purchase Complete!</p>";
+				unset($_SESSION['cart']);
 			}
 		}
 		else if (!isset($_SESSION['cart']) || !empty($_SESSION['cart'])) {
