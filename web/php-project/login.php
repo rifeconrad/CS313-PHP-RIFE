@@ -25,7 +25,7 @@
     require 'db_runner.php';
   ?>
   
-  <div id="login_box">
+  <div class="login_box">
     <p>WELCOME TO HOBBY HEROES</p>
     <form class="form_container" action="createaccount.php">
       <button type="submit">Create Account</button>
