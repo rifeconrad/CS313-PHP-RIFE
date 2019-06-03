@@ -10,7 +10,9 @@
 
 		if (isset($_POST['new_username']) && isset($_POST['new_password'])) {
 			$username = htmlspecialchars($_POST['new_username']);
-			$password = htmlspecialchars($_POST['new_password']);
+			$password = password_hash($_POST['new_password'], PASSWORD_DEFAULT);
+
+
 
 			if ($username != "" || $password != "") {
 				$db_insert = $db->prepare('INSERT INTO users(username, password) VALUES(:username, :password)');
@@ -23,7 +25,7 @@
 
 		if (isset($_POST['username']) && isset($_POST['password'])) {
 			$username = htmlspecialchars($_POST['username']);
-			$password = htmlspecialchars($_POST['password']);
+			$password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
 			$statement = $db->prepare("SELECT * FROM USERS WHERE username=:username");
 
