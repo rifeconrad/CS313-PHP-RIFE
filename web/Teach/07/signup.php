@@ -14,7 +14,7 @@
 	<form action="index.php" method="POST">
 		<input type="text" name="new_username" placeholder="New Username" required></input><br>
 		<input type="text" name="new_password" placeholder="New Password" required></input><br>
-		<button type="submit">Login</button>
+		<button type="submit">SIGN UP</button>
 	</form>
 
 </body>
