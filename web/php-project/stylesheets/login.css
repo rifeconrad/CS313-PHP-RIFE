@@ -25,7 +25,7 @@ img {
 	min-width: 150px;
 }
 
-#login_box {
+.login_box {
 	background-color: green;
 	position: fixed;
   	top: 50%;
