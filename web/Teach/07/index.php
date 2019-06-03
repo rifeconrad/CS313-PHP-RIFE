@@ -6,7 +6,29 @@
 <body>
 
 	<?php
+		include "db_runner.php";
 
+		if (isset($_POST['username']) && isset($_POST['password'])) {
+			$username = htmlspecialchars($_POST['username']);
+			$password = htmlspecialchars($_POST['password']);
+
+			$statement = $db->prepare("SELECT * FROM USERS WHERE username=:username");
+
+			$statement->bindValue(":username", $username, PDO::PARAM_STR);
+
+			$statement->execute();
+
+			$row = $statement->fetch(PDO::FETCH_ASSOC);
+
+			if ($row) {
+				$_SESSION['username'] = $username;
+				header("Location: welcome.php");
+				die();
+			}
+			else {
+				echo "You screwed up";
+			}
+		}
 	?>
 
 	<form action="index.php" method="POST">

@@ -6,7 +6,11 @@
 <body>
 
 	<?php
+		require "db_runner.php";
 
+		if (isset($_POST['username']) && isset($_POST['password'])) {
+			
+		}
 	?>
 
 	<form action="index.php" method="POST">
