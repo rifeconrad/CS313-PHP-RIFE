@@ -24,3 +24,8 @@ img {
 	max-width: 250px;
 	min-width: 150px;
 }
+
+#login_box {
+	text-align: center;
+	display: inline-block;
+}
