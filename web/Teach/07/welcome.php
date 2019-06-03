@@ -8,6 +8,6 @@
 		require "db_runner.php";
 	?>
 
-	<p>WILKOMMEN <?php echo (isset($_SESSION['username']) ? "" : $_SESSION['username']; ?></p>
+	<p>WILKOMMEN <?php echo (isset($_SESSION['username']) ? $_SESSION['username'] : ""; ?></p>
 </body>
 </html>
