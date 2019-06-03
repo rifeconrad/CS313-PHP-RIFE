@@ -25,7 +25,7 @@
 
 		if (isset($_POST['username']) && isset($_POST['password'])) {
 			$username = htmlspecialchars($_POST['username']);
-			$password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+			$password = htmlspecialchars($_POST['password']);
 
 			$statement = $db->prepare("SELECT * FROM USERS WHERE username=:username");
 
@@ -35,7 +35,9 @@
 
 			$row = $statement->fetch(PDO::FETCH_ASSOC);
 
-			if ($row) {
+			$hashed_password = $row['password'];
+
+			if (password_verify($password, $hashed_password)) {
 				$_SESSION['username'] = $username;
 				header("Location: welcome.php");
 				die();
