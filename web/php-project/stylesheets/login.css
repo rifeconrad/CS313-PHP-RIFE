@@ -1,16 +1,18 @@
 form {
-	display: flex;
-	flex-direction: column;
+	text-align: center;
+	display: inline-block;
 }
 
 img {
+	text-align: center;
+	display: inline-block;
 	width: 100px;
 	height: 100px;
 }
 
 .container {
-	display: flex;
-	flex-direction: column;
+	text-align: center;
+	display: inline-block;
 	
 	max-width: 250px;
 }
@@ -21,12 +23,13 @@ img {
 }
  
 .form_button {
+	text-align: center;
+	display: inline-block;
 	max-width: 250px;
 	min-width: 150px;
 }
 
 .login_box {
-	padding 10px;
 	background-color: #CAB684;
 	position: fixed;
   	top: 50%;
