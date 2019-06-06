@@ -26,7 +26,7 @@
   ?>
   
   <div class="login_box">
-    <p id="title">WELCOME TO HOBBY HEROES</p>
+    <p class="container" id="title">WELCOME TO HOBBY HEROES</p>
     <form class="form_button" action="createaccount.php">
       <button type="submit">Create Account</button>
     </form>
