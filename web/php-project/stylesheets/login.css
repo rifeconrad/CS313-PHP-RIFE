@@ -5,6 +5,7 @@
 }
 
 form {
+	font-size: 150%;
 	text-align: center;
 	display: inline-block;
 }
@@ -37,7 +38,7 @@ img {
 }
 
 .login_box {
-	background-color: rgba(202, 182, 132, 0.5);
+	background-color: rgba(202, 182, 132, 0.2);
 	position: fixed;
   	top: 50%;
  	left: 50%;
