@@ -52,26 +52,28 @@
 			}
 		?>
 
-		<form class="form_container" action="login.php">
+		<form class="container" action="login.php">
 		    <button type="submit">Back to Login</button>
 		</form>
 		<br>
 
-		<form class="form_container" action="createaccount.php" method="post">
-		    <div class="container">
-			  
-		      <label for="uname"><b>Username</b></label>
-		      <input type="text" placeholder="Enter Username" name="uname" maxlength="16" minlength="8" required>
+		<div class="login_box">
+			<form class="form_container" action="createaccount.php" method="post">
+			    <div class="container">
+				  
+			      <label for="uname"><b>Username</b></label>
+			      <input type="text" placeholder="Enter Username" name="uname" maxlength="16" minlength="8" required>
 
-		      <label for="psw"><b>Password</b></label>
-		      <input type="password" placeholder="Enter Password" name="psw" maxlength="16" minlength="8" required><br>
+			      <label for="psw"><b>Password</b></label>
+			      <input type="password" placeholder="Enter Password" name="psw" maxlength="16" minlength="8" required><br>
 
-		      <label for="psw"><b>Confirm Password</b></label>
-		      <input type="password" placeholder="Enter Password" name="pswc" maxlength="16" minlength="8" required><br>
+			      <label for="psw"><b>Confirm Password</b></label>
+			      <input type="password" placeholder="Enter Password" name="pswc" maxlength="16" minlength="8" required><br>
 
-		      <button type="submit">Create Account</button>
-		    </div>
-		</form>
+			      <button type="submit">Create Account</button>
+			    </div>
+			</form>
+		</div>
 
     </body>
 </html>
