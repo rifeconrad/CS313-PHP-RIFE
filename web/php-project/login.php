@@ -15,7 +15,7 @@
       if ($_POST['log_status'] == "out") {
         $_SESSION['password_success'] = false;
         if (isset($_SESSION['cart']) {
-          unset($_SESSION['cart'];
+          $_SESSION['cart'] = array();
         }
       }
       else if (isset($_SESSION['password_success'])) {
