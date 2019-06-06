@@ -27,6 +27,8 @@ img {
 	display: inline-block;
 	max-width: 250px;
 	min-width: 150px;
+
+	padding: 5px;
 }
 
 .login_box {

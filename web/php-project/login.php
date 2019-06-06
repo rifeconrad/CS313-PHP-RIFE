@@ -27,7 +27,7 @@
   
   <div class="login_box">
     <p>WELCOME TO HOBBY HEROES</p>
-    <form class="form_container" action="createaccount.php">
+    <form class="form_button" action="createaccount.php">
       <button type="submit">Create Account</button>
     </form>
     <br>
@@ -43,7 +43,7 @@
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required><br>
 
-        <button type="submit">Login</button>
+        <button class="form_button" type="submit">Login</button>
       </div>
     </form>
   </div>
