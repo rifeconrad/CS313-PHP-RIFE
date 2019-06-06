@@ -26,6 +26,7 @@ img {
 }
 
 .login_box {
+	padding 10px;
 	background-color: #CAB684;
 	position: fixed;
   	top: 50%;
