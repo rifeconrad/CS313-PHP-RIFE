@@ -1,13 +1,13 @@
 #active_link {
 	text-decoration: none;
-	background-color: #32CD32;
-	color: white;
+	background-color: #4F3F30;
+	color: rgba(202, 182, 132, 0.4);
 	padding: 5px;
 }
 
 #non_active_link {
 	text-decoration: none;
 	background-color: white;
-	color: #32CD32;
+	color: #4F3F30;
 	padding: 5px;
 }
