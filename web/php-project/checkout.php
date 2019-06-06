@@ -21,7 +21,7 @@
 
 	<div class="login_box">
 		<form class="form_container" action="checkout.php?active=CHECKOUT&purchase=confirmed" method="post">
-			<p>Input your address information:</p>
+			<span class="ind"><p>Input your address information:</p></span>
 			<span class="ind">First Name</span> <input type="text" name="first_name" required></input><br>
 			<span class="ind">Last Name</span> <input type="text" name="last_name" required></input><br>
 			<span class="ind">Street</span> <input type="text" name="street" required></input><br>
