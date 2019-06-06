@@ -26,6 +26,8 @@ img {
 .form_container {
 	text-align: center;
 	display: inline-block;
+
+	opacity: 0.5;
 }
  
 .form_button {
