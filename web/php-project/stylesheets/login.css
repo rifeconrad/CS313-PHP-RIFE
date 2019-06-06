@@ -26,8 +26,6 @@ img {
 .form_container {
 	text-align: center;
 	display: inline-block;
-
-	opacity: 0.5;
 }
  
 .form_button {
@@ -45,4 +43,5 @@ img {
  	left: 50%;
  	margin-top: -150px;
  	margin-left: -100px;
+	opacity: 0.5;
 }
