@@ -26,7 +26,6 @@ img {
 .form_container {
 	text-align: center;
 	display: inline-block;
-	opacity: 1;
 }
  
 .form_button {
@@ -38,11 +37,10 @@ img {
 }
 
 .login_box {
-	background-color: #CAB684;
+	background-color: rgba(202, 182, 132, 0.5);
 	position: fixed;
   	top: 50%;
  	left: 50%;
  	margin-top: -150px;
  	margin-left: -100px;
-	opacity: 0.5;
 }
